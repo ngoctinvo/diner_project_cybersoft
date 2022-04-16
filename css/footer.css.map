@@ -2,7 +2,7 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "../sass/footer.sass"
+        "../sass/footer.scss"
     ],
     "names": [],
     "file": "footer.css"

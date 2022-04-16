@@ -2,7 +2,7 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "../sass/blog.sass"
+        "../sass/blog.scss"
     ],
     "names": [],
     "file": "blog.css"
