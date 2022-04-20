@@ -67,6 +67,7 @@
   font-size: 1.2rem;
   font-weight: 300;
   text-align: justify;
+  padding-right: 3rem;
 }
 
 #restaurants .restaurants-container .content .title h2 {
@@ -103,6 +104,11 @@
   font-size: 1.5rem;
   color: #ff6600;
   border-radius: 0.4rem;
+}
+
+#restaurants .restaurants-container .content .info .item .icon i:hover {
+  color: #ffcc00;
+  transition: all 0.3s;
 }
 
 #restaurants .restaurants-container .content .info .item .icon span {
@@ -245,6 +251,12 @@
   cursor: pointer;
 }
 
+#whats-new .content .list .item .info:hover {
+  background-color: transparent;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
 #services {
   background-color: #f7f7f7;
   padding: 5rem 10rem;
@@ -302,6 +314,145 @@
   color: white;
   background-color: #ff6600;
   transition: all 0.5s;
+}
+
+#statistics {
+  height: 35vw;
+  width: 100%;
+  margin-bottom: 20rem;
+  position: relative;
+}
+
+#statistics .carousel {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+
+#statistics .carousel .img {
+  width: 100%;
+  height: 100%;
+}
+
+#statistics .carousel .img img {
+  width: 100%;
+  filter: brightness(0.5);
+}
+
+#statistics .carousel .content {
+  position: absolute;
+  top: 0;
+  padding-top: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#statistics .carousel .content h2 {
+  font-size: 3rem;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+#statistics .carousel .content .btn-info {
+  background-color: transparent;
+  font-size: 1.1rem;
+}
+
+#statistics .carousel .content .btn-info button:first-child {
+  background-color: transparent;
+  border: 2px solid white;
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+  color: white;
+  border-radius: 0.6rem;
+  margin-right: 1rem;
+}
+
+#statistics .carousel .content .btn-info button:first-child:hover {
+  background-color: white;
+  transition: all 0.6s;
+  color: #ff6600;
+}
+
+#statistics .carousel .content .btn-info button:nth-child(2) {
+  margin-left: 1rem;
+  border-radius: 0.6rem;
+  background-color: #ff6600;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.789);
+  padding: 0.8rem 2rem;
+  border: 2px solid #ff6600;
+}
+
+#statistics .carousel .content .btn-info button:nth-child(2):hover {
+  background-color: #ff6600d4;
+  transition: all 0.6s;
+}
+
+#statistics .statistics-number-container {
+  position: absolute;
+  top: 70%;
+  width: 100%;
+}
+
+#statistics .statistics-number-container .statistics-number {
+  width: 100%;
+  padding: 5rem 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#statistics .statistics-number-container .statistics-number .item {
+  background-color: #ffffff;
+  padding: 2rem;
+  width: 18vw;
+  height: 17vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.6rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 2px 0px;
+}
+
+#statistics .statistics-number-container .statistics-number .item i {
+  padding: 1rem 1.2rem;
+  background-color: #ff6600;
+  font-size: 2rem;
+  border-radius: 50%;
+  color: white;
+}
+
+#statistics .statistics-number-container .statistics-number .item span {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+#statistics .statistics-number-container .statistics-number .item p {
+  font-size: 1rem;
+}
+
+#statistics .statistics-number-container .statistics-number .item:hover {
+  transform: translateY(-5px);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: all 0.5s;
+}
+
+#video {
+  width: 100%;
+  height: 40vw;
+  margin: 10vw 15vw;
+}
+
+#video iframe {
+  width: 70vw;
+  height: 100%;
 }
 
 #blog {

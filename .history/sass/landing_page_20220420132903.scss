@@ -61,7 +61,6 @@
                 font-size: 1.2rem;
                 font-weight: 300;
                 text-align: justify;
-                padding-right: 3rem;
             }
             .title {
                 h2 {
@@ -86,6 +85,7 @@
                     display: flex;
                     margin-top: 1rem;
                     flex-direction: column;
+                    margin-right: 1rem;
                     .icon {
                         i {
                             padding: 1.5rem;
