@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .title h2 {
@@ -38,8 +39,10 @@
 
 #contact-us .contact-us-container .content .info-input {
   width: 100%;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
 
@@ -76,13 +79,18 @@
 
 #contact-us .contact-us-container button:hover {
   background-color: #ffc800;
+  -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
 #find-us .find-us-container {
   padding: 5rem 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #find-us .find-us-container .content {
@@ -95,9 +103,16 @@
 }
 
 #find-us .find-us-container .content .info .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #find-us .find-us-container .content .info .item i {
@@ -126,77 +141,5 @@
 #find-us .find-us-container .map iframe {
   width: 100%;
   height: 25vw;
-}
-
-#footer {
-  background-color: black;
-  line-height: 200%;
-  font-size: 1.1rem;
-  color: #b1b1b1;
-}
-
-#footer .container {
-  max-width: 100% !important;
-  padding: 5rem 10rem;
-}
-
-#footer a {
-  color: #b1b1b1;
-}
-
-#footer a:hover {
-  color: #ff6600;
-  text-decoration: none;
-}
-
-#footer .infor .item {
-  margin: 2rem 0;
-}
-
-#footer .infor h2 {
-  color: white;
-}
-
-#footer .infor .icon i {
-  padding: 0.8rem;
-  color: #ff6600;
-  border-radius: 10px;
-  background-color: white;
-  font-size: 1.2rem;
-}
-
-#footer .infor .list {
-  display: flex;
-  flex-direction: column;
-}
-
-#footer .infor .subscribe input {
-  width: 100%;
-  height: 4rem;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-  padding-left: 1rem;
-}
-
-#footer .infor .subscribe button {
-  width: 100%;
-  height: 4rem;
-  border-radius: 10px;
-  background-color: #ff6600;
-  color: white;
-}
-
-#footer .copyright {
-  padding: 2rem 0;
-}
-
-#footer .copyright .nav ul {
-  display: flex;
-  flex-direction: row;
-}
-
-#footer .copyright .nav ul li {
-  margin-right: 1rem;
-  list-style-type: none;
 }
 /*# sourceMappingURL=contact.css.map */
