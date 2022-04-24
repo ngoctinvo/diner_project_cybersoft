@@ -1,0 +1,91 @@
+@import "./variable";
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+
+  .closebtn {
+    font-size: 1rem;
+    font-weight: 900;
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    right: 2.5rem;
+    top: 2.5rem;
+    overflow: hidden;
+    border: none;
+    background: $primary-color;
+    color: $bg-color;
+    border-radius: $border-radius;
+  }
+
+  a {
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.5625rem;
+    color: $bg-color;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 1.875rem;
+  }
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: $primary-color;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 1.25rem;
+  }
+  .overlay .closebtn {
+    font-size: 2.5rem;
+    top: 0.9375rem;
+    right: 2.1875rem;
+  }
+}
+
+// .overlay {
+//   position: fixed;
+//   width: 100%;
+//   height: 100%;
+//   top: 0px;
+//   left: 0px;
+//   background: rgba(6, 3, 0, 0.77);
+
+  // .overlay-scale {
+  //   // visibility: hidden;
+  //   opacity: 0;
+  //   transform: scale(0.9);
+  //   transition: transform 0.2s ease 0s, opacity 0.2s ease 0s,
+  //     visibility 0s ease 0.2s;
+
+//   .overlay-close {
+//     width: 2.5rem;
+//     height: 2.5rem;
+//     position: absolute;
+//     right: 2.5rem;
+//     top: 2.5rem;
+//     overflow: hidden;
+//     border: none;
+//     background: $primary-color;
+//     color: rgb(255, 255, 255);
+//     border-radius: $border-radius;
+//   }
+// }
+// }
