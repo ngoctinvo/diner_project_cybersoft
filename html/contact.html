@@ -16,10 +16,74 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+
 </head>
 
 <body>
-    <header></header>
+    <header id="header">
+        <div class="header">
+            <div class="container">
+                <div class="header-container">
+                    <div class="logo-container">
+                        <h1>
+                            <a class="logo-brand" href="./index.html">Diner</a>
+                        </h1>
+                    </div>
+                    <div class="menu-right-container">
+                        <div class="search-bar">
+                            <form action="#" class="search">
+                                <input type="search" class="search__input" name="search" placeholder="Search here..." required />
+                                <span class="fa fa-search search__icon"></span>
+                            </form>
+                        </div>
+                        <div class="menu-switch-mode">
+                            <div class="mobile-position">
+                                <nav class="navigation">
+                                    <div class="theme-switch-wrapper">
+                                        <label for="checkbox" class="theme-switch">
+                      <input type="checkbox" id="checkbox" />
+                      <div class="mode-container">
+                        <ion-icon
+                          class="moon-icon"
+                          name="moon-outline"
+                        ></ion-icon>
+                      </div>
+                    </label>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="nav-menu">
+                            <button id="trigger-overlay" type="button" onclick="openNav()">
+                <i class="fa fa-bars"></i>
+              </button>
+                        </div>
+                    </div>
+                    <div id="myNav" class="overlay overlay-scale">
+                        <button class="overlay-close closebtn" onclick="closeNav()">
+              <i class="fa fa-times"></i>
+            </button>
+                        <div class="overlay-content">
+                            <a href="./index.html">Home</a>
+                            <a href="#">About</a>
+                            <a href="#">Services</a>
+                            <a href="../html/blog.html">Blog</a>
+                            <a href="../html/landing_page.html">Landing Page</a>
+                            <a href="../html/contact.html">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner-info">
+                    <span>Home <i class="fa fa-angle-right"></i>
+                </span> <span>Contact</span>
+                </div>
+            </div>
+        </div>
+
+    </header>
     <main>
         <section id="contact-us">
             <div class="contact-us-container">
@@ -151,6 +215,8 @@
             </div>
         </div>
     </footer>
+    <script src="../js/curtainmenu.js"></script>
+
 </body>
 
 </html>
