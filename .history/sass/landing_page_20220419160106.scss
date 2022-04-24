@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title {
+    h2 {
+        color: #ff6600;
+        font-size: 1rem;
+    }
+}
+
+#about-us {
+    .about-us-container {
+        display: flex;
+        flex-direction: row;
+    }
+}

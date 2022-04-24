@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.blog {
+    color: black;
+    .container {
+        width: 100%;
+        background-color: #f7f7f7;
+        padding: 5rem 2rem;
+        .title {
+            p {
+                color: orange;
+                font-size: 1rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+        .row {
+            display: flex;
+            flex-direction: row;
+            .left-posts {
+                width: 60%;
+                .list {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: repeat(3, 50vw);
+                    gap: 1rem;
+                    .item {
+                        margin-bottom: 5rem;
+                        width: 100%;
+                        height: 100%;
+                        .img {
+                            position: relative;
+                            height: 65%;
+                            width: 100%;
+                            img {
+                                border-radius: 0.6rem;
+                                width: 100%;
+                                height: 100%;
+                            }
+                            .info-img {
+                                position: absolute;
+                                width: 100%;
+                                bottom: 0;
+                                left: 0;
+                                button {
+                                    cursor: pointer;
+                                    font-size: 1rem;
+                                    font-weight: 600;
+                                    color: white;
+                                    padding: 0.2rem 1rem;
+                                    border-radius: 1rem;
+                                    border: none;
+                                    margin: 1rem;
+                                    background-color: #ff6600;
+                                }
+                                span {
+                                    color: white;
+                                }
+                            }
+                        }
+                        .content {
+                            h3 {
+                                margin: 1rem 0;
+                                font-size: 1.7rem;
+                                font-weight: 500;
+                            }
+                            p {
+                                font-size: 1.2rem;
+                                font-weight: 300;
+                            }
+                        }
+                        .author {
+                            margin-top: 1rem;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+                            a {
+                                font-size: 1rem;
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                            }
+                            .author-info {
+                                span {
+                                    font-size: 1.2rem;
+                                }
+                                margin-right: 1rem;
+                                img {
+                                    width: 2rem;
+                                    border-radius: 50%;
+                                    margin-right: 0.3rem;
+                                }
+                            }
+                            a {
+                                text-decoration: none;
+                                color: black;
+                                font-size: 1.2rem;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+                .control-btn {
+                    margin-top: 2rem;
+                    ul {
+                        width: 100%;
+                        margin: 0 50%;
+                        display: flex;
+                        li {
+                            cursor: pointer;
+                            display: inline-block;
+                            font-weight: 600;
+                            .item {
+                                background-color: #f7f7f7;
+                                padding: 0.6rem 1rem;
+                                color: #000000;
+                                border-radius: 0.5rem;
+                                border: 1px solid #ededed;
+                            }
+                            .active {
+                                cursor: default;
+                                background-color: #ff6600;
+                                padding: 0.6rem 1rem;
+                                color: white;
+                                border-radius: 0.5rem;
+                            }
+                        }
+                        li:hover .item {
+                            transition: all 0.3s;
+                            color: #ff6600;
+                            background-color: white;
+                            border: 1px solid #ff6600;
+                        }
+                    }
+                }
+            }
+            .right-posts {
+                width: 40%;
+                background-color: red;
+            }
+        }
+    }
+}
