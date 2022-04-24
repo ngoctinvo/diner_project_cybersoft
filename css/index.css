@@ -1,7 +1,11 @@
 * {
   margin: 0;
   padding: 0;
+<<<<<<< HEAD
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+=======
+  box-sizing: border-box;
+>>>>>>> ad6bb0a179b5cca9225972805ccba54874f140dc
 }
 /*# sourceMappingURL=index.css.map */
