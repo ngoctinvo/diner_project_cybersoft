@@ -266,8 +266,20 @@ section {
 }
 
 #footer .infor h2 {
-  color: white;
-  margin-bottom: 1rem;
+  font-size: 1.875rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #fff;
+  padding: 0;
+}
+
+#footer .infor h6 {
+  font-size: 1.3rem;
+  line-height: 1.75rem;
+  margin-bottom: 1.875rem;
+  font-weight: 700;
+  position: relative;
+  color: #fff;
 }
 
 #footer .infor .icon {
