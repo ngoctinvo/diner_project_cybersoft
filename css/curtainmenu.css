@@ -28,11 +28,8 @@ section {
 }
 
 .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-right: -0.9375rem;
   margin-left: -0.9375rem;
 }
@@ -111,9 +108,7 @@ section {
     padding-bottom: 3rem !important;
   }
   .col-md-3 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 25%;
-            flex: 0 0 25%;
+    flex: 0 0 25%;
     max-width: 25%;
   }
   .pb-md-3,
@@ -187,9 +182,7 @@ section {
 }
 
 .align-self {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
 
 p {
@@ -273,7 +266,6 @@ section {
   font-size: 1.5625rem;
   color: #fff;
   display: block;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 

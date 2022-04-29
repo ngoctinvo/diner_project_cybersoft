@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;400;500;600;700&display=swap");
 html {
   font-size: 16px;
 }
@@ -261,6 +263,48 @@ section {
   color: black;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.title {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.title h2 {
+  color: #ff6600;
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: 'Pacifico', cursive;
+}
+
+.title span {
+  font-size: 2.3rem;
+  font-weight: 600;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.my-btn {
+  padding: 0.8rem 2.5rem;
+  background-color: #ff6600;
+  color: white;
+  border-radius: 0.6rem;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.my-btn:hover {
+  background-color: #ffcc00;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
 #about-us {
   padding: 5rem 10rem;
   background-color: #f7f7f7;
@@ -280,12 +324,14 @@ section {
 #about-us .about-us-container .title {
   width: 40%;
   margin-right: 5rem;
+  text-align: left;
 }
 
 #about-us .about-us-container .content {
   width: 60%;
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: 400;
+  text-align: justify;
 }
 
 #restaurants .restaurants-container {
@@ -302,6 +348,11 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#restaurants .restaurants-container .title h2 {
+  color: white;
+  text-align: left;
 }
 
 #restaurants .restaurants-container .img {
@@ -325,17 +376,6 @@ section {
   font-weight: 300;
   text-align: justify;
   padding-right: 3rem;
-}
-
-#restaurants .restaurants-container .content .title h2 {
-  color: white;
-}
-
-#restaurants .restaurants-container .content .title span {
-  font-size: 2.5rem;
-  font-weight: 500;
-  display: block;
-  margin-bottom: 1.5rem;
 }
 
 #restaurants .restaurants-container .content .info {
@@ -517,7 +557,6 @@ section {
 }
 
 #whats-new .content .list .item .info {
-  color: white;
   background-color: rgba(0, 0, 0, 0.348);
   width: 100%;
   height: 100%;
@@ -529,12 +568,17 @@ section {
 }
 
 #whats-new .content .list .item .info .text span {
-  color: #ffbf00;
+  color: #ffcc00;
   font-size: 1.3rem;
+  font-weight: 600;
 }
 
 #whats-new .content .list .item .info .text h3 {
   cursor: pointer;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
 }
 
 #whats-new .content .list .item .info:hover {
@@ -592,12 +636,17 @@ section {
 }
 
 #services .list .item .type .icon i {
-  background-color: #f9f8ff;
+  background-color: #f7f7f7;
   padding: 1.5rem;
   border-radius: 0.6rem;
   color: #ff6600;
   margin-right: 2rem;
   font-size: 1.5rem;
+}
+
+#services .list .item .type h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
 }
 
 #services .list .item .type:hover h3 {
@@ -666,7 +715,7 @@ section {
 #statistics .carousel .content h2 {
   font-size: 3rem;
   color: white;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 3rem;
 }
 
@@ -761,12 +810,14 @@ section {
 }
 
 #statistics .statistics-number-container .statistics-number .item span {
-  font-size: 3rem;
+  font-size: 2.6rem;
+  margin-top: 0.5rem;
   font-weight: 600;
 }
 
 #statistics .statistics-number-container .statistics-number .item p {
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 #statistics .statistics-number-container .statistics-number .item:hover {
@@ -853,13 +904,13 @@ section {
 
 #blog .row .item .content h3 {
   margin: 1rem 0;
-  font-size: 1.7rem;
-  font-weight: 500;
+  font-size: 1.4rem;
+  font-weight: 700;
 }
 
 #blog .row .item .content p {
-  font-size: 1.2rem;
-  font-weight: 300;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
 #blog .row .item .author {
@@ -880,7 +931,7 @@ section {
 }
 
 #blog .row .item .author a {
-  font-size: 1rem;
+  font-size: 0.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -898,11 +949,11 @@ section {
 }
 
 #blog .row .item .author .author-info span {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 #blog .row .item .author .author-info img {
-  width: 2rem;
+  width: 2.3rem;
   border-radius: 50%;
   margin-right: 0.3rem;
 }
@@ -910,7 +961,7 @@ section {
 #blog .row .item .author a {
   text-decoration: none;
   color: black;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
@@ -952,6 +1003,7 @@ section {
 #testimonials .content .item p {
   font-size: 1.2rem;
   font-weight: 300;
+  margin: 1rem 0;
 }
 
 #testimonials .content .item span {
@@ -964,17 +1016,12 @@ section {
   text-align: center;
 }
 
-#contact-us .contact-us-container .title span {
-  font-size: 2.5rem;
-  font-weight: 400;
-}
-
 #contact-us .contact-us-container .content {
   font-size: 1.3rem;
 }
 
 #contact-us .contact-us-container .content p {
-  font-weight: 300;
+  font-weight: 400;
   margin: 2rem 0;
 }
 
@@ -995,7 +1042,10 @@ section {
   border-radius: 0.6rem;
   background-color: #f7f7f7;
   border: none;
-  padding-left: 1rem;
+  padding-left: 1.5rem;
+  font-size: 1.1rem;
+  color: #f7f7f7;
+  font-weight: 400;
 }
 
 #contact-us .contact-us-container .content .message-input {
@@ -1008,20 +1058,9 @@ section {
 }
 
 #contact-us .contact-us-container button {
-  padding: 0.8rem 2.5rem;
-  background-color: #ff6600;
-  color: white;
-  border-radius: 0.6rem;
-  border: none;
   position: absolute;
   right: 10rem;
   margin-top: 1rem;
-}
-
-#contact-us .contact-us-container button:hover {
-  background-color: #ffc800;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
 }
 
 #find-us .find-us-container {
@@ -1032,6 +1071,10 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+#find-us .find-us-container .title {
+  text-align: left;
 }
 
 #find-us .find-us-container .content {
@@ -1054,6 +1097,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 1.5rem 0;
 }
 
 #find-us .find-us-container .content .info .item i {
@@ -1066,17 +1110,23 @@ section {
 }
 
 #find-us .find-us-container .content .info .item .detail span {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 400;
 }
 
 #find-us .find-us-container .content .info .item .detail p {
-  font-size: 1.2rem;
-  font-weight: 300;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+#find-us .find-us-container .content .info .item .detail p:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 #find-us .find-us-container .map {
   width: 70%;
+  border: 0.7rem solid #f7f7f7;
 }
 
 #find-us .find-us-container .map iframe {

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;400;500;600;700&display=swap");
 html {
   font-size: 16px;
 }
@@ -32,7 +34,7 @@ section {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-right: -0.9375rem;
   margin-left: -0.9375rem;
 }
@@ -112,8 +114,8 @@ section {
   }
   .col-md-3 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 25%;
-            flex: 0 0 25%;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
     max-width: 25%;
   }
   .pb-md-3,
@@ -188,8 +190,8 @@ section {
 
 .align-self {
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 p {
@@ -244,8 +246,52 @@ section {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.title {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.title h2 {
+  color: #ff6600;
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: "Pacifico", cursive;
+}
+
+.title span {
+  font-size: 2.3rem;
+  font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+}
+
+.my-btn {
+  padding: 0.8rem 2.5rem;
+  background-color: #ff6600;
+  color: white;
+  border-radius: 0.6rem;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.my-btn:hover {
+  background-color: #ffcc00;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 #blog {
@@ -258,31 +304,14 @@ section {
   padding: 5rem 10rem;
 }
 
-#blog .blog-container .title {
-  text-align: center;
-  margin: 2rem 0;
-}
-
-#blog .blog-container .title p {
-  color: #ff6600;
-  font-size: 1.5rem;
-  font-style: italic;
-  font-weight: 600;
-}
-
-#blog .blog-container .title h1 {
-  font-size: 2.5rem;
-  font-weight: 500;
-}
-
 #blog .blog-container .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 #blog .blog-container .row .left-posts {
@@ -294,9 +323,8 @@ section {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: (45vw)[3];
-      grid-template-rows: repeat(3, 45vw);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 45vw);
   gap: 2rem;
 }
 
@@ -343,13 +371,13 @@ section {
 
 #blog .blog-container .row .left-posts .list .item .content h3 {
   margin: 1rem 0;
-  font-size: 1.7rem;
-  font-weight: 500;
+  font-size: 1.4rem;
+  font-weight: 700;
 }
 
 #blog .blog-container .row .left-posts .list .item .content p {
-  font-size: 1.2rem;
-  font-weight: 300;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
 #blog .blog-container .row .left-posts .list .item .author {
@@ -359,28 +387,28 @@ section {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #blog .blog-container .row .left-posts .list .item .author a {
-  font-size: 1rem;
+  font-size: 0.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #blog .blog-container .row .left-posts .list .item .author .author-info {
@@ -388,11 +416,11 @@ section {
 }
 
 #blog .blog-container .row .left-posts .list .item .author .author-info span {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 #blog .blog-container .row .left-posts .list .item .author .author-info img {
-  width: 2rem;
+  width: 2.3rem;
   border-radius: 50%;
   margin-right: 0.3rem;
 }
@@ -400,7 +428,7 @@ section {
 #blog .blog-container .row .left-posts .list .item .author a {
   text-decoration: none;
   color: black;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
@@ -417,11 +445,11 @@ section {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 #blog .blog-container .row .left-posts .control-btn ul li {
@@ -435,7 +463,7 @@ section {
   padding: 0.6rem 1rem;
   color: #000000;
   border-radius: 0.5rem;
-  border: 1px solid #ededed;
+  border: 1px solid #f7f7f7;
 }
 
 #blog .blog-container .row .left-posts .control-btn ul li .active {
@@ -462,11 +490,11 @@ section {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #blog .blog-container .row .right-posts .post {
@@ -487,7 +515,7 @@ section {
   display: grid;
   gap: 1rem;
   -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 #blog .blog-container .row .right-posts .latest-recipes .list .item {
@@ -496,8 +524,8 @@ section {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 #blog .blog-container .row .right-posts .latest-recipes .list .item img {
@@ -520,9 +548,8 @@ section {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1;
-      grid-template-columns: 1;
-  -ms-grid-rows: (8vw)[3];
-      grid-template-rows: repeat(3, 8vw);
+  grid-template-columns: 1;
+  grid-template-rows: repeat(3, 8vw);
   gap: 2rem;
 }
 
@@ -532,8 +559,8 @@ section {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 #blog .blog-container .row .right-posts .trending-posts .list .item img {
@@ -549,11 +576,11 @@ section {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 #blog .blog-container .row .right-posts .trending-posts .list .item .info p {

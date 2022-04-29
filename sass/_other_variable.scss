@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;400;500;600;700&display=swap');
+$orange: #ff6600;
+$orange-light: #ffcc00;
+$gray-light: #f7f7f7;
+$gray: #858585;
+//padding
+$padding-xl:5rem 10rem;
+$padding-lg:5rem 5rem;
+$padding-md:4rem 2rem;
+$padding-sm:4rem 1rem;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.title {
+    text-align: center;
+    margin: 2rem 0;
+    h2 {
+        color: $orange;
+        font-size: 1.4rem;
+        font-weight: 500;
+        font-family: 'Pacifico', cursive;
+    }
+    span {
+        font-size: 2.3rem;
+        font-weight: 600;
+        font-family: 'Quicksand', sans-serif;
+    }
+}
+
+.my-btn {
+    padding: 0.8rem 2.5rem;
+    background-color: $orange;
+    color: white;
+    border-radius: 0.6rem;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.my-btn:hover {
+    background-color: $orange-light;
+    transition: all 0.4s;
+}

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;400;500;600;700&display=swap");
 html {
   font-size: 16px;
 }
@@ -32,7 +34,7 @@ section {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-right: -0.9375rem;
   margin-left: -0.9375rem;
 }
@@ -112,8 +114,8 @@ section {
   }
   .col-md-3 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 25%;
-            flex: 0 0 25%;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
     max-width: 25%;
   }
   .pb-md-3,
@@ -188,8 +190,8 @@ section {
 
 .align-self {
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 p {
@@ -244,8 +246,9 @@ section {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .title h2 {
@@ -261,14 +264,52 @@ section {
   color: black;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.title {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.title h2 {
+  color: #ff6600;
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: "Pacifico", cursive;
+}
+
+.title span {
+  font-size: 2.3rem;
+  font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+}
+
+.my-btn {
+  padding: 0.8rem 2.5rem;
+  background-color: #ff6600;
+  color: white;
+  border-radius: 0.6rem;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.my-btn:hover {
+  background-color: #ffcc00;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
 #contact-us .contact-us-container {
   padding: 5rem 10rem;
   text-align: center;
-}
-
-#contact-us .contact-us-container .title span {
-  font-size: 2.5rem;
-  font-weight: 400;
 }
 
 #contact-us .contact-us-container .content {
@@ -284,13 +325,13 @@ section {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat( 3, 1fr);
   gap: 1rem;
 }
 
 #contact-us .contact-us-container .content .info-input input {
   height: 4rem;
+  font-size: 1rem;
 }
 
 #contact-us .contact-us-container .content input {
@@ -298,6 +339,7 @@ section {
   background-color: #f7f7f7;
   border: none;
   padding-left: 1rem;
+  font-size: 1rem;
 }
 
 #contact-us .contact-us-container .content .message-input {
@@ -310,20 +352,38 @@ section {
 }
 
 #contact-us .contact-us-container button {
-  padding: 0.8rem 2.5rem;
-  background-color: #ff6600;
-  color: white;
-  border-radius: 0.6rem;
-  border: none;
   position: absolute;
   right: 10rem;
   margin-top: 1rem;
 }
 
-#contact-us .contact-us-container button:hover {
-  background-color: #ffc800;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+@media screen and (max-width: 576px) {
+  #contact-us .contact-us-container {
+    padding: 4rem 1rem;
+  }
+  #contact-us .contact-us-container .content .info-input {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #contact-us .contact-us-container button {
+    position: absolute;
+    right: 10rem;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #contact-us .contact-us-container {
+    padding: 4rem 2rem;
+  }
+  #contact-us .contact-us-container .content .info-input {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #contact-us .contact-us-container {
+    padding: 5rem 5rem;
+  }
 }
 
 #find-us .find-us-container {
@@ -332,8 +392,12 @@ section {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+#find-us .find-us-container .title {
+  text-align: left;
 }
 
 #find-us .find-us-container .content {
@@ -351,11 +415,12 @@ section {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 1.5rem 0;
 }
 
 #find-us .find-us-container .content .info .item i {
@@ -368,21 +433,66 @@ section {
 }
 
 #find-us .find-us-container .content .info .item .detail span {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 400;
 }
 
 #find-us .find-us-container .content .info .item .detail p {
-  font-size: 1.2rem;
-  font-weight: 300;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+#find-us .find-us-container .content .info .item .detail p:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 #find-us .find-us-container .map {
   width: 70%;
+  height: 100%;
+  border: 0.7rem solid #f7f7f7;
 }
 
 #find-us .find-us-container .map iframe {
   width: 100%;
   height: 25vw;
+}
+
+@media screen and (max-width: 576px) {
+  #find-us .find-us-container {
+    padding: 4rem 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #find-us .find-us-container {
+    padding: 4rem 2rem;
+    display: block;
+  }
+  #find-us .find-us-container .content {
+    width: 100%;
+  }
+  #find-us .find-us-container .map {
+    width: 100%;
+    height: 65vw;
+    border: 0.1rem solid #f7f7f7;
+  }
+  #find-us .find-us-container .map iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #find-us .find-us-container {
+    padding: 4rem 1rem;
+    display: block;
+  }
+  #find-us .find-us-container .content {
+    width: 100%;
+  }
+  #find-us .find-us-container .map iframe {
+    height: 45vw;
+  }
 }
 /*# sourceMappingURL=contact.css.map */
