@@ -75,7 +75,7 @@
 
 #blog .blog-container .row .left-posts .list .item .img {
   position: relative;
-  height: 70%;
+  height: 30vw;
   width: 100%;
 }
 
@@ -271,14 +271,14 @@
 }
 
 #blog .blog-container .row .right-posts .trending-posts .list .item .info p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 600;
   cursor: pointer;
 }
 
 #blog .blog-container .row .right-posts .trending-posts .list .item .info span {
   margin: 0.8rem 0;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 300;
 }
 
@@ -319,5 +319,137 @@
 #blog .blog-container .row .right-posts .advertisement img {
   width: 100%;
   border-radius: 1rem;
+}
+
+@media screen and (max-width: 576px) {
+  #blog .blog-container {
+    padding: 4rem 1rem;
+  }
+  #blog .blog-container .row .right-posts {
+    padding: 2rem;
+  }
+  #blog .blog-container .row .right-posts .post {
+    padding: 1rem;
+  }
+  #blog .blog-container .row .right-posts .latest-recipes .list .item span {
+    font-size: 1rem;
+  }
+  #blog .blog-container .row .right-posts .trending-posts h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+  #blog .blog-container .row .right-posts .trending-posts .list {
+    grid-template-rows: repeat(3, 50vw);
+  }
+  #blog .blog-container .row .right-posts .trending-posts .list .item .info p {
+    font-size: 1rem;
+  }
+  #blog .blog-container .row .right-posts .trending-posts .list .item .info span {
+    font-size: 1rem;
+  }
+  #blog .blog-container .row .right-posts .trending-posts .list {
+    grid-template-rows: repeat(3, 50vw);
+  }
+  #blog .blog-container .row .right-posts .trending-posts .list .item .info p {
+    font-size: 1rem;
+  }
+  #blog .blog-container .row .right-posts .trending-posts .list .item .info span {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #blog .blog-container {
+    padding: 4rem 2rem;
+  }
+  #blog .blog-container .row .left-posts {
+    width: 100%;
+  }
+  #blog .blog-container .row .left-posts .list {
+    width: 100%;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  #blog .blog-container .row .left-posts .list .item {
+    height: 85vw;
+  }
+  #blog .blog-container .row .left-posts .list .item .img {
+    height: 70vw;
+  }
+  #blog .blog-container .row .left-posts .list .item .img img {
+    height: 100%;
+  }
+  #blog .blog-container .row .right-posts {
+    width: 100%;
+    padding: 2rem;
+  }
+  #blog .blog-container .row .right-posts .trending-posts .list {
+    grid-template-rows: repeat(3, 50vw);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #blog .blog-container {
+    padding: 5rem 5rem;
+  }
+  #blog .blog-container .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  #blog .blog-container .row .left-posts {
+    padding: 0;
+    width: 100%;
+  }
+  #blog .blog-container .row .left-posts .list {
+    grid-template-rows: repeat(3, 50vw);
+  }
+  #blog .blog-container .row .right-posts {
+    width: 100%;
+    padding: 2rem;
+  }
+  #blog .blog-container .row .right-posts .trending-posts .list {
+    display: flex;
+    flex-direction: column;
+  }
+  #blog .blog-container .row .right-posts .trending-posts .list .item {
+    height: 20vw;
+  }
+  #blog .blog-container .row .right-posts .trending-posts .list .item img {
+    height: 100%;
+    width: 10px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #blog .blog-container {
+    padding: 5rem 10rem;
+  }
+  #blog .blog-container .row .left-posts .list {
+    grid-template-rows: repeat(3, 60vw);
+  }
+  #blog .blog-container .row .left-posts .list .img img {
+    height: 40vw;
+  }
+  #blog .blog-container .row .left-posts .list .img span {
+    font-size: 0.7rem;
+    margin-left: -1rem;
+  }
+  #blog .blog-container .row .right-posts {
+    padding: 2rem;
+  }
+  #blog .blog-container .row .right-posts .trending-posts .list {
+    grid-template-rows: repeat(3, 10vw);
+  }
+  #blog .blog-container .row .right-posts .trending-posts .list .item img {
+    width: 30%;
+  }
+  #blog .blog-container .row .right-posts .trending-posts .list .item .info p {
+    font-size: 1rem;
+  }
+  #blog .blog-container .row .right-posts .trending-posts .list .item .info span {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=blog.css.map */

@@ -22,7 +22,7 @@
                         height: 100%;
                         .img {
                             position: relative;
-                            height: 70%;
+                            height: 30vw;
                             width: 100%;
                             img {
                                 border-radius: 0.6rem;
@@ -191,13 +191,13 @@
                                 flex-direction: column;
                                 justify-content: center;
                                 p {
-                                    font-size: 1.4rem;
+                                    font-size: 1.2rem;
                                     font-weight: 600;
                                     cursor: pointer;
                                 }
                                 span {
                                     margin: 0.8rem 0;
-                                    font-size: 1.2rem;
+                                    font-size: 1.1rem;
                                     font-weight: 300;
                                 }
                             }
@@ -243,8 +243,170 @@
             }
         }
     }
-    @media screen and (max-width: 576px) {}
-    @media screen and (max-width: 768px) {}
-    @media screen and (max-width: 992px) {}
-    @media screen and (max-width: 1200px) {}
+    @media screen and (max-width: 576px) {
+        .blog-container {
+            padding: $padding-sm;
+            .row {
+                .right-posts {
+                    padding: 2rem;
+                    .post {
+                        padding: 1rem;
+                    }
+                    .latest-recipes {
+                        .list {
+                            .item {
+                                span {
+                                    font-size: 1rem;
+                                }
+                            }
+                        }
+                    }
+                    .trending-posts {
+                        h2 {
+                            font-size: 2rem;
+                            margin-bottom: 1rem;
+                            font-weight: 500;
+                        }
+                        .list {
+                            grid-template-rows: repeat(3, 50vw);
+                            .item {
+                                .info {
+                                    p {
+                                        font-size: 1rem;
+                                    }
+                                    span {
+                                        font-size: 1rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .trending-posts {
+                        .list {
+                            grid-template-rows: repeat(3, 50vw);
+                            .item {
+                                .info {
+                                    p {
+                                        font-size: 1rem;
+                                    }
+                                    span {
+                                        font-size: 1rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .blog-container {
+            padding: $padding-md;
+            .row {
+                .left-posts {
+                    width: 100%;
+                    .list {
+                        width: 100%;
+                        gap: 2rem;
+                        display: flex;
+                        flex-direction: column;
+                        .item {
+                            height: 85vw;
+                            .img {
+                                height: 70vw;
+                                img {
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+                .right-posts {
+                    width: 100%;
+                    padding: 2rem;
+                    .trending-posts {
+                        .list {
+                            grid-template-rows: repeat(3, 50vw);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 992px) {
+        .blog-container {
+            padding: $padding-lg;
+            .row {
+                flex-direction: column;
+                align-items: center;
+                .left-posts {
+                    padding: 0;
+                    width: 100%;
+                    .list {
+                        grid-template-rows: repeat(3, 50vw);
+                    }
+                }
+                .right-posts {
+                    width: 100%;
+                    padding: 2rem;
+                    .trending-posts {
+                        .list {
+                            display: flex;
+                            flex-direction: column;
+                            .item {
+                                height: 20vw;
+                                img {
+                                    height: 100%;
+                                    width: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 1200px) {
+        .blog-container {
+            padding: $padding-xl;
+            .row {
+                .left-posts {
+                    .list {
+                        grid-template-rows: repeat(3, 60vw);
+                        .img {
+                            img {
+                                height: 40vw;
+                            }
+                            span {
+                                font-size: 0.7rem;
+                                margin-left: -1rem;
+                            }
+                        }
+                    }
+                }
+                .right-posts {
+                    padding: 2rem;
+                    .trending-posts {
+                        .list {
+                            grid-template-rows: repeat(3, 10vw);
+                            .item {
+                                img {
+                                    width: 30%;
+                                }
+                                .info {
+                                    p {
+                                        font-size: 1rem;
+                                    }
+                                    span {
+                                        font-size: 1rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
