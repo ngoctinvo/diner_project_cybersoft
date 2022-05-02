@@ -38,8 +38,11 @@ section {
 }
 
 .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-right: -0.9375rem;
   margin-left: -0.9375rem;
 }
@@ -118,7 +121,9 @@ section {
     padding-bottom: 3rem !important;
   }
   .col-md-3 {
-    flex: 0 0 25%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
     max-width: 25%;
   }
   .pb-md-3,
@@ -192,7 +197,9 @@ section {
 }
 
 .align-self {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 p {
@@ -246,7 +253,8 @@ section {
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
@@ -272,9 +280,14 @@ section {
 }
 
 .feature-with-photo .feature-with-photo-hny .feature-with-photo-content .ab-in-flow {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-right: -0.9375rem;
   margin-left: -0.9375rem;
 }
@@ -296,18 +309,25 @@ section {
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   background-color: transparent;
   border: 1px solid transparent;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5rem;
   border-radius: 0.25rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   padding: 0.75rem 2.8125rem;
   font-size: 1rem;
   line-height: 1.875rem;
   font-weight: 700;
+  -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
   border-radius: 0.375rem;
   border: 2px solid transparent;
@@ -324,9 +344,13 @@ section {
 }
 
 .feature-with-photo .feature-with-photo-hny .feature-with-photo-content .grid-columns-3 {
-  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1.5fr 1fr 1fr 1fr;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
   grid-gap: 1.875rem;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
   display: grid;
 }
 
@@ -387,6 +411,8 @@ section {
 }
 
 .skills .col-lg-5 .skills-bars .progress-info .progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 0.5em;
   overflow: hidden;
@@ -402,12 +428,15 @@ section {
 
 .skills .col-lg-5 .skills-bars .progress-info .progress .progress-bar {
   background-color: #ff6600;
+  -webkit-transition: width 0.6s ease;
   transition: width 0.6s ease;
 }
 
 .skills .col-lg-7 .skill-imags {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   grid-gap: 0 1.875rem;
 }
 
@@ -432,6 +461,7 @@ section {
 }
 
 .team-main .team .col-lg-4 .team-member .team-img img {
+  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   overflow: hidden;
   width: 100%;
@@ -446,6 +476,7 @@ section {
   overflow: hidden;
   width: 100%;
   z-index: 2;
+  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 
@@ -463,6 +494,7 @@ section {
   border-radius: 50%;
   line-height: 2.625rem;
   text-align: center;
+  -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   background: rgba(157, 157, 157, 0.5);
 }
@@ -480,6 +512,7 @@ section {
   overflow: hidden;
   width: 100%;
   z-index: 2;
+  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 
