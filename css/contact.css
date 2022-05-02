@@ -366,18 +366,9 @@ section {
   margin-top: 1rem;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   #contact-us .contact-us-container {
-    padding: 4rem 1rem;
-  }
-  #contact-us .contact-us-container .content .info-input {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-  }
-  #contact-us .contact-us-container button {
-    position: absolute;
-    right: 10rem;
-    margin-top: 1rem;
+    padding: 5rem 5rem;
   }
 }
 
@@ -391,9 +382,18 @@ section {
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 576px) {
   #contact-us .contact-us-container {
-    padding: 5rem 5rem;
+    padding: 4rem 1rem;
+  }
+  #contact-us .contact-us-container .content .info-input {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  #contact-us .contact-us-container button {
+    position: absolute;
+    right: 10rem;
+    margin-top: 1rem;
   }
 }
 

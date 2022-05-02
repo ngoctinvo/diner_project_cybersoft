@@ -1,4 +1,9 @@
 @import "./variable";
+html,
+body {
+    // max-width: 100%;
+    overflow-x: hidden;
+}
 
 * {
     margin: 0;
@@ -41,13 +46,14 @@
             text-align: justify;
         }
     }
-    @media screen and (max-width: 576px) {}
-    @media screen and (max-width: 768px) {}
-    @media screen and (max-width: 992px) {}
-    @media screen and (max-width: 1200px) {}
+    // @media screen and (max-width: 576px) {}
+    // @media screen and (max-width: 768px) {}
+    // @media screen and (max-width: 992px) {}
+    // @media screen and (max-width: 1200px) {}
 }
 
 #restaurants {
+    width: 100%;
     .restaurants-container {
         width: 100%;
         height: 40vw;
@@ -112,13 +118,14 @@
             }
         }
     }
-    @media screen and (max-width: 576px) {}
-    @media screen and (max-width: 768px) {}
-    @media screen and (max-width: 992px) {}
-    @media screen and (max-width: 1200px) {}
+    // @media screen and (max-width: 576px) {}
+    // @media screen and (max-width: 768px) {}
+    // @media screen and (max-width: 992px) {}
+    // @media screen and (max-width: 1200px) {}
 }
 
 #our-team {
+    width: 100%;
     padding: $padding-xl;
     background-color: white;
     .title {
@@ -187,13 +194,14 @@
             }
         }
     }
-    @media screen and (max-width: 576px) {}
-    @media screen and (max-width: 768px) {}
-    @media screen and (max-width: 992px) {}
-    @media screen and (max-width: 1200px) {}
+    // @media screen and (max-width: 576px) {}
+    // @media screen and (max-width: 768px) {}
+    // @media screen and (max-width: 992px) {}
+    // @media screen and (max-width: 1200px) {}
 }
 
 #whats-new {
+    width: 100%;
     padding: $padding-xl;
     background-color: #f7f7f7;
     .title {
@@ -247,13 +255,14 @@
             }
         }
     }
-    @media screen and (max-width: 576px) {}
-    @media screen and (max-width: 768px) {}
-    @media screen and (max-width: 992px) {}
-    @media screen and (max-width: 1200px) {}
+    // @media screen and (max-width: 576px) {}
+    // @media screen and (max-width: 768px) {}
+    // @media screen and (max-width: 992px) {}
+    // @media screen and (max-width: 1200px) {}
 }
 
 #services {
+    width: 100%;
     background-color: #f7f7f7;
     padding: $padding-xl;
     .list {
@@ -309,13 +318,14 @@
             transition: all 0.5s;
         }
     }
-    @media screen and (max-width: 576px) {}
-    @media screen and (max-width: 768px) {}
-    @media screen and (max-width: 992px) {}
-    @media screen and (max-width: 1200px) {}
+    // @media screen and (max-width: 576px) {}
+    // @media screen and (max-width: 768px) {}
+    // @media screen and (max-width: 992px) {}
+    // @media screen and (max-width: 1200px) {}
 }
 
 #statistics {
+    width: 100%;
     height: 35vw;
     width: 100%;
     margin-bottom: 20rem;
@@ -426,13 +436,14 @@
             }
         }
     }
-    @media screen and (max-width: 576px) {}
-    @media screen and (max-width: 768px) {}
-    @media screen and (max-width: 992px) {}
-    @media screen and (max-width: 1200px) {}
+    // @media screen and (max-width: 576px) {}
+    // @media screen and (max-width: 768px) {}
+    // @media screen and (max-width: 992px) {}
+    // @media screen and (max-width: 1200px) {}
 }
 
 #video {
+    width: 100%;
     width: 100%;
     height: 40vw;
     margin: 10vw 15vw;
@@ -440,13 +451,14 @@
         width: 70vw;
         height: 100%;
     }
-    @media screen and (max-width: 576px) {}
-    @media screen and (max-width: 768px) {}
-    @media screen and (max-width: 992px) {}
-    @media screen and (max-width: 1200px) {}
+    // @media screen and (max-width: 576px) {}
+    // @media screen and (max-width: 768px) {}
+    // @media screen and (max-width: 992px) {}
+    // @media screen and (max-width: 1200px) {}
 }
 
 #blog {
+    width: 100%;
     background-color: $gray-light;
     padding: $padding-xl;
     height: 45vw;
@@ -536,13 +548,14 @@
             }
         }
     }
-    @media screen and (max-width: 576px) {}
-    @media screen and (max-width: 768px) {}
-    @media screen and (max-width: 992px) {}
-    @media screen and (max-width: 1200px) {}
+    // @media screen and (max-width: 576px) {}
+    // @media screen and (max-width: 768px) {}
+    // @media screen and (max-width: 992px) {}
+    // @media screen and (max-width: 1200px) {}
 }
 
 #testimonials {
+    width: 100%;
     padding: $padding-xl;
     .title {
         text-align: center;
@@ -580,13 +593,14 @@
             }
         }
     }
-    @media screen and (max-width: 576px) {}
-    @media screen and (max-width: 768px) {}
-    @media screen and (max-width: 992px) {}
-    @media screen and (max-width: 1200px) {}
+    // @media screen and (max-width: 576px) {}
+    // @media screen and (max-width: 768px) {}
+    // @media screen and (max-width: 992px) {}
+    // @media screen and (max-width: 1200px) {}
 }
 
 #contact-us {
+    width: 100%;
     .contact-us-container {
         padding: $padding-xl;
         text-align: center;
@@ -628,13 +642,14 @@
             margin-top: 1rem;
         }
     }
-    @media screen and (max-width: 576px) {}
-    @media screen and (max-width: 768px) {}
-    @media screen and (max-width: 992px) {}
-    @media screen and (max-width: 1200px) {}
+    // @media screen and (max-width: 576px) {}
+    // @media screen and (max-width: 768px) {}
+    // @media screen and (max-width: 992px) {}
+    // @media screen and (max-width: 1200px) {}
 }
 
 #find-us {
+    width: 100%;
     .find-us-container {
         padding: $padding-xl;
         display: flex;
@@ -683,8 +698,8 @@
             }
         }
     }
-    @media screen and (max-width: 576px) {}
-    @media screen and (max-width: 768px) {}
-    @media screen and (max-width: 992px) {}
-    @media screen and (max-width: 1200px) {}
+    // @media screen and (max-width: 576px) {}
+    // @media screen and (max-width: 768px) {}
+    // @media screen and (max-width: 992px) {}
+    // @media screen and (max-width: 1200px) {}
 }
