@@ -9,12 +9,9 @@
 }
 
 .home-services {
-  @include py-5;
   position: relative;
   .container {
-    @include py-5;
     .row {
-      @include row;
       .col-lg-4 {
         @include px-1;
 
@@ -74,12 +71,10 @@
   position: relative;
   background-size: cover;
   z-index: 1;
-  @include py-5;
 
   .container {
     .welcome-left {
       @include text-center;
-      @include py-5;
       max-width: 43.75rem;
       margin: 0 auto;
       h3 {
@@ -98,6 +93,7 @@
           @include btn;
           @include btn-style;
           @include btn-white;
+          margin-right: 1rem !important;
           &:hover {
             background: $bg-color;
             color: $primary-color;
@@ -142,7 +138,6 @@
     padding-left: 1.25rem;
   }
   .menu-item {
-
     .col-8 {
       padding-left: 0 !important;
     }
@@ -183,4 +178,48 @@
       }
     }
   }
+}
+@media screen and (max-width: 576px) {
+  .middle {
+    .welcome-left h3 {
+      font-size: 2.1875rem !important;
+      line-height: 2.5rem !important;
+      .middle-buttons {
+        margin-top: 2rem !important;
+        width: 100%;
+      }
+    }
+  }
+
+  .title-w3l,
+  .title-w3l.two {
+    font-size: 1.875rem !important;
+    line-height: 2.375rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  .middle {
+    .welcome-left h3 {
+      font-size: 2.5rem !important;
+      line-height: 3.125rem !important;
+      .middle-buttons {
+        margin-top: 2rem !important;
+        width: 100%;
+      }
+    }
+  }
+
+  .title-w3l,
+  .title-w3l.two {
+    font-size: 2rem !important;
+    line-height: 2.5rem;
+  }
+
 }
