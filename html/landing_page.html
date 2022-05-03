@@ -16,7 +16,10 @@
     <link rel="stylesheet" href="../css/footer.css">
 </head>
 
-<body>
+<body><span class="count">200</span>
+
+
+
     <header id="header">
         <div class="header">
             <div class="container ">
@@ -343,23 +346,23 @@
             <div class="statistics-number-container">
                 <div class="statistics-number">
                     <div class="item">
-                        <i class="fab fa-apple"></i>
-                        <span>15,100</span>
+                        <i class="fa fa-calculator"></i>
+                        <span class="count">15100</span>
                         <p>Branches</p>
                     </div>
                     <div class="item">
-                        <i class="fab fa-apple"></i>
-                        <span>19,256</span>
+                        <i class="fa fa-utensils"></i>
+                        <span class="count">19256</span>
                         <p>Food Items</p>
                     </div>
                     <div class="item">
-                        <i class="fab fa-apple"></i>
-                        <span>12,100</span>
+                        <i class="fa fa-users"></i>
+                        <span class="count">12100</span>
                         <p>Chefs</p>
                     </div>
                     <div class="item">
-                        <i class="fab fa-apple"></i>
-                        <span>2,560</span>
+                        <i class="fa fa-smile-beam"></i>
+                        <span class="count">2560</span>
                         <p>Happy Customer</p>
                     </div>
                 </div>
@@ -624,7 +627,7 @@
         </div>
     </footer>
     <script src="../js/curtainmenu.js"></script>
-
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -644,7 +647,18 @@
                     items: 1
                 }
             }
-        })
+        });
+        $('.count').each(function() {
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 4000,
+                easing: 'swing',
+                step: function(now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
     </script>
 
 </body>

@@ -551,14 +551,17 @@
 }
 
 #statistics .statistics-number-container .statistics-number .item i {
-  padding: 1rem 1.2rem;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
   background-color: #ff6600;
+  text-align: center;
   font-size: 2rem;
   border-radius: 50%;
   color: white;
 }
 
-#statistics .statistics-number-container .statistics-number .item span {
+#statistics .statistics-number-container .statistics-number .item .count {
   font-size: 2.6rem;
   margin-top: 0.5rem;
   font-weight: 600;

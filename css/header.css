@@ -248,7 +248,7 @@ section {
   width: 100%;
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   top: 0;
   left: 0;
   background-color: black;
@@ -300,6 +300,13 @@ section {
     font-size: 2.5rem;
     top: 0.9375rem;
     right: 2.1875rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .overlay .overlay-content {
+    text-align: left !important;
+    padding-left: 8rem !important;
   }
 }
 
