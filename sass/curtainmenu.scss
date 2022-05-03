@@ -63,8 +63,11 @@
 @media screen and (max-width: 576px) {
   .overlay {
     .overlay-content {
-      text-align: left !important;
-      padding-left: 8rem !important;
+      margin-left: -2.7rem !important;
+    }
+
+    .closebtn {
+      right: 10rem !important;
     }
   }
 }
