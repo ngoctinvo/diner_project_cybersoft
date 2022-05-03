@@ -258,48 +258,14 @@ section {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.feature-with-photo .feature-with-photo-hny {
-  padding-top: 3rem !important;
-  padding-bottom: 3rem !important;
-}
-
-.feature-with-photo .feature-with-photo-hny .header-title .title-subhny {
-  font-size: 1.25rem;
-  font-weight: 400;
-  line-height: 1.875rem;
-  letter-spacing: 0.0625rem;
-  color: #ff6600;
-  display: block;
-  font-family: "Pacifico", cursive;
-}
-
-.feature-with-photo .feature-with-photo-hny .header-title .title-w3l {
-  font-size: 2.375rem;
-  line-height: 3rem;
-  font-weight: 600;
-}
-
 .feature-with-photo .feature-with-photo-hny .feature-with-photo-content .ab-in-flow {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-right: -0.9375rem;
-  margin-left: -0.9375rem;
 }
 
 .feature-with-photo .feature-with-photo-hny .feature-with-photo-content .ab-in-flow .ab-left .radius-image {
   border-radius: 0.375rem;
-}
-
-.feature-with-photo .feature-with-photo-hny .feature-with-photo-content .ab-in-flow .ab-right .title-w3l {
-  font-size: 2.375rem;
-  line-height: 3rem;
-  font-weight: 600;
 }
 
 .feature-with-photo .feature-with-photo-hny .feature-with-photo-content .ab-in-flow a {
@@ -374,6 +340,10 @@ section {
 .feature-with-photo .feature-with-photo-hny .feature-with-photo-content .grid-columns-3 .grid p {
   margin: 0;
   margin-top: 5px;
+}
+
+.feature-with-photo .three-grids {
+  margin-top: 2.625rem;
 }
 
 .skills {
@@ -526,5 +496,47 @@ section {
   color: #232121;
   font-weight: 700;
   display: block;
+}
+
+@media screen and (max-width: 576px) {
+  .title-w3l,
+  .title-w3l.two {
+    font-size: 1.875rem !important;
+    line-height: 2.375rem !important;
+  }
+  p {
+    font-size: 1rem !important;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .feature-with-photo .feature-with-photo-hny .feature-with-photo-content .ab-right {
+    margin-top: 3.125rem;
+  }
+  .feature-with-photo .feature-with-photo-hny .feature-with-photo-content .grid-columns-3 {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .feature-with-photo .feature-with-photo-hny .feature-with-photo-content .ab-right {
+    margin-top: 3.125rem;
+  }
+  .feature-with-photo .feature-with-photo-hny .feature-with-photo-content .grid-columns-3 {
+    -ms-grid-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
+    grid-gap: 2.5rem;
+  }
+  .title-w3l,
+  .title-w3l.two {
+    font-size: 2rem !important;
+    line-height: 2.5rem !important;
+  }
+  p {
+    font-size: 1rem !important;
+    line-height: 26px;
+  }
 }
 /*# sourceMappingURL=about.css.map */

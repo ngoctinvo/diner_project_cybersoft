@@ -7,35 +7,17 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-
 .feature-with-photo {
   .feature-with-photo-hny {
-    @include py-5;
-    .header-title {
-      .title-subhny {
-        @include title-subhny;
-      }
-      .title-w3l {
-        @include title-w3l;
-      }
-    }
-
     .feature-with-photo-content {
       .ab-in-flow {
         align-items: center;
-        @include row;
-
         .ab-left {
           .radius-image {
             border-radius: $border-radius;
           }
         }
 
-        .ab-right {
-          .title-w3l {
-            @include title-w3l;
-          }
-        }
         a {
           @include btn;
           @include btn-style;
@@ -78,6 +60,9 @@
         }
       }
     }
+  }
+  .three-grids {
+    margin-top: 2.625rem;
   }
 }
 
@@ -209,5 +194,60 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .title-w3l,
+  .title-w3l.two {
+    font-size: 1.875rem !important;
+    line-height: 2.375rem !important;
+  }
+  p {
+    font-size: 1rem !important;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .feature-with-photo {
+    .feature-with-photo-hny {
+      .feature-with-photo-content {
+        .ab-right {
+          margin-top: 3.125rem;
+        }
+        .grid-columns-3 {
+          grid-template-columns: 1fr !important;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+
+  .feature-with-photo {
+    .feature-with-photo-hny {
+      .feature-with-photo-content {
+        .ab-right {
+          margin-top: 3.125rem;
+        }
+        .grid-columns-3 {
+          grid-template-columns: 1fr 1fr !important;
+          grid-gap: 2.5rem;
+        }
+      }
+    }
+  }
+
+  .title-w3l,
+  .title-w3l.two {
+    font-size: 2rem !important;
+    line-height: 2.5rem !important;
+  }
+  p {
+    font-size: 1rem !important;
+    line-height: 26px;
   }
 }
