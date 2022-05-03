@@ -167,16 +167,16 @@
                   }
                 }
               }
-              &:hover {
-                opacity: 1;
-                position: absolute;
-                bottom: 12%;
-                left: 0;
-                overflow: hidden;
-                width: 100%;
-                z-index: 2;
-                transition: all 0.4s ease-in-out;
-              }
+              // &:hover {
+              //   opacity: 1;
+              //   position: absolute;
+              //   bottom: 12%;
+              //   left: 0;
+              //   overflow: hidden;
+              //   width: 100%;
+              //   z-index: 2;
+              //   transition: all 0.4s ease-in-out;
+              // }
             }
           }
         }
@@ -192,6 +192,10 @@
           font-weight: 700;
           display: block;
         }
+      }
+      .team-member:hover .overlay-team .team-details {
+        opacity: 1;
+        transition: all 0.4s ease-in-out;
       }
     }
   }

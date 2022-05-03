@@ -474,18 +474,6 @@ section {
   background-color: #fff;
 }
 
-.team-main .team .col-lg-4 .team-member .team-img .overlay-team .team-details:hover {
-  opacity: 1;
-  position: absolute;
-  bottom: 12%;
-  left: 0;
-  overflow: hidden;
-  width: 100%;
-  z-index: 2;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-
 .team-main .team .col-lg-4 .team-member:hover a {
   color: #ff6600;
 }
@@ -496,6 +484,12 @@ section {
   color: #232121;
   font-weight: 700;
   display: block;
+}
+
+.team-main .team .col-lg-4 .team-member:hover .overlay-team .team-details {
+  opacity: 1;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 @media screen and (max-width: 576px) {
