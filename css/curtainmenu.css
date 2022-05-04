@@ -6,6 +6,46 @@ section {
   display: block;
 }
 
+#backToTop:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+#backToTop:active {
+  background-color: #555;
+}
+
+#backToTop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#backToTop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#backToTop {
+  transition: background-color .3s, opacity .5s, visibility .5s;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  line-height: 3rem;
+  border-radius: 50%;
+  background-color: #ff6600;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  transition: all 0.5s;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#backToTop i {
+  color: white;
+}
+
 .title-subhny {
   font-size: 1.25rem;
   font-weight: 400;
@@ -38,11 +78,8 @@ section {
 }
 
 .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-right: -0.9375rem;
   margin-left: -0.9375rem;
 }
@@ -121,9 +158,7 @@ section {
     padding-bottom: 3rem !important;
   }
   .col-md-3 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 25%;
-            flex: 0 0 25%;
+    flex: 0 0 25%;
     max-width: 25%;
   }
   .pb-md-3,
@@ -197,9 +232,7 @@ section {
 }
 
 .align-self {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
 
 p {
@@ -283,7 +316,6 @@ section {
   font-size: 1.5625rem;
   color: #fff;
   display: block;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 

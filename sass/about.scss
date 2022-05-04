@@ -1,257 +1,250 @@
 @import "./variable";
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .feature-with-photo {
-  .feature-with-photo-hny {
-    .feature-with-photo-content {
-      .ab-in-flow {
-        align-items: center;
-        .ab-left {
-          .radius-image {
-            border-radius: $border-radius;
-          }
-        }
-
-        a {
-          @include btn;
-          @include btn-style;
-          color: $bg-color;
-          background-color: $primary-color;
-          border: 2px solid $primary-color;
-          &:hover {
-            color: #fff;
-            background-color: $primary-color;
-            border: 2px solid $primary-color;
-            opacity: 0.8;
-          }
-        }
-      }
-
-      .grid-columns-3 {
-        grid-template-columns: 1.5fr 1fr 1fr 1fr;
-        grid-gap: 1.875rem;
-        align-items: center;
-        display: grid;
-        .grid {
-          .title-w3l {
-            @include title-w3l;
-          }
-          h4 {
-            a {
-              color: $primary-color;
-              font-size: 1.25rem;
-              line-height: 2rem;
-              font-weight: 600;
-              &:hover {
-                color: $secondary-color;
-              }
+    .feature-with-photo-hny {
+        .feature-with-photo-content {
+            .ab-in-flow {
+                align-items: center;
+                .ab-left {
+                    .radius-image {
+                        border-radius: $border-radius;
+                    }
+                }
+                a {
+                    @include btn;
+                    @include btn-style;
+                    color: $bg-color;
+                    background-color: $primary-color;
+                    border: 2px solid $primary-color;
+                    &:hover {
+                        color: #fff;
+                        background-color: $primary-color;
+                        border: 2px solid $primary-color;
+                        opacity: 0.8;
+                    }
+                }
             }
-          }
-          p {
-            margin: 0;
-            margin-top: 5px;
-          }
+            .grid-columns-3 {
+                grid-template-columns: 1.5fr 1fr 1fr 1fr;
+                grid-gap: 1.875rem;
+                align-items: center;
+                display: grid;
+                .grid {
+                    .title-w3l {
+                        @include title-w3l;
+                    }
+                    h4 {
+                        a {
+                            color: $primary-color;
+                            font-size: 1.25rem;
+                            line-height: 2rem;
+                            font-weight: 600;
+                            &:hover {
+                                color: $secondary-color;
+                            }
+                        }
+                    }
+                    p {
+                        margin: 0;
+                        margin-top: 5px;
+                    }
+                }
+            }
         }
-      }
     }
-  }
-  .three-grids {
-    margin-top: 2.625rem;
-  }
+    .three-grids {
+        margin-top: 2.625rem;
+    }
 }
 
 .skills {
-  background-color: $bg-grey;
-  @include py-5;
-  .col-lg-5 {
-    .title-subhny {
-      @include title-subhny;
-    }
-    .title-w3l {
-      @include title-w3l;
-    }
-    .skills-bars {
-      .progress-info {
-        margin-bottom: 1.5625rem;
-        text-align: left;
-        .progress-tittle {
-          font-size: 1.125rem;
-          color: $heading-color;
-          margin-bottom: 0.625rem;
-          font-weight: 700;
+    background-color: $bg-grey;
+    @include py-5;
+    .col-lg-5 {
+        .title-subhny {
+            @include title-subhny;
         }
-        .progress {
-          display: flex;
-          height: 0.5em;
-          overflow: hidden;
-          font-size: 0.75em;
-          background-color: $font-color;
-          border-radius: 0.25em;
-          .progress-bar-striped {
-            background-image: none;
-            background-size: 1em 1em;
-          }
-          .progress-bar {
-            background-color: $primary-color;
-            transition: width 0.6s ease;
-          }
+        .title-w3l {
+            @include title-w3l;
         }
-      }
+        .skills-bars {
+            .progress-info {
+                margin-bottom: 1.5625rem;
+                text-align: left;
+                .progress-tittle {
+                    font-size: 1.125rem;
+                    color: $heading-color;
+                    margin-bottom: 0.625rem;
+                    font-weight: 700;
+                }
+                .progress {
+                    display: flex;
+                    height: 0.5em;
+                    overflow: hidden;
+                    font-size: 0.75em;
+                    background-color: $font-color;
+                    border-radius: 0.25em;
+                    .progress-bar-striped {
+                        background-image: none;
+                        background-size: 1em 1em;
+                    }
+                    .progress-bar {
+                        background-color: $primary-color;
+                        transition: width 0.6s ease;
+                    }
+                }
+            }
+        }
     }
-  }
-  .col-lg-7 {
-    .skill-imags {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 0 1.875rem;
-      .radius-image {
-        border-radius: $border-radius;
-      }
+    .col-lg-7 {
+        .skill-imags {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 0 1.875rem;
+            .radius-image {
+                border-radius: $border-radius;
+            }
+        }
     }
-  }
 }
 
 .team-main {
-  .team {
-    @include py-5;
-    position: relative;
-    .col-lg-4 {
-      .team-member {
+    .team {
+        @include py-5;
         position: relative;
-        overflow: hidden;
-
-        .team-img {
-          position: relative;
-          overflow: hidden;
-          img {
-            transition: all 0.2s ease-in-out;
-            overflow: hidden;
-            width: 100%;
-            border-radius: $border-radius;
-          }
-          .overlay-team {
-            .team-details {
-              opacity: 0;
-              position: absolute;
-              bottom: 12%;
-              left: 0;
-              overflow: hidden;
-              width: 100%;
-              z-index: 2;
-              transition: all 0.4s ease-in-out;
-              .socials {
-                a {
-                  display: inline-block;
-                  margin-right: 5px;
-                  span {
-                    color: $bg-color;
-                    font-size: 1rem;
-                    display: block;
-                    width: 2.625rem;
-                    height: 2.625rem;
-                    border-radius: 50%;
-                    line-height: 2.625rem;
-                    text-align: center;
-                    transition: all 0.3s ease 0s;
-                    background: rgba(157, 157, 157, 0.5);
-                    &:hover {
-                      color: $primary-color;
-                      background-color: $bg-color;
+        .col-lg-4 {
+            .team-member {
+                position: relative;
+                overflow: hidden;
+                .team-img {
+                    position: relative;
+                    overflow: hidden;
+                    img {
+                        transition: all 0.2s ease-in-out;
+                        overflow: hidden;
+                        width: 100%;
+                        border-radius: $border-radius;
                     }
-                  }
+                    .overlay-team {
+                        .team-details {
+                            opacity: 0;
+                            position: absolute;
+                            bottom: 12%;
+                            left: 0;
+                            overflow: hidden;
+                            width: 100%;
+                            z-index: 2;
+                            transition: all 0.4s ease-in-out;
+                            .socials {
+                                a {
+                                    display: inline-block;
+                                    margin-right: 5px;
+                                    span {
+                                        color: $bg-color;
+                                        font-size: 1rem;
+                                        display: block;
+                                        width: 2.625rem;
+                                        height: 2.625rem;
+                                        border-radius: 50%;
+                                        line-height: 2.625rem;
+                                        text-align: center;
+                                        transition: all 0.3s ease 0s;
+                                        background: rgba(157, 157, 157, 0.5);
+                                        &:hover {
+                                            color: $primary-color;
+                                            background-color: $bg-color;
+                                        }
+                                    }
+                                }
+                            }
+                            // &:hover {
+                            //   opacity: 1;
+                            //   position: absolute;
+                            //   bottom: 12%;
+                            //   left: 0;
+                            //   overflow: hidden;
+                            //   width: 100%;
+                            //   z-index: 2;
+                            //   transition: all 0.4s ease-in-out;
+                            // }
+                        }
+                    }
                 }
-              }
-              // &:hover {
-              //   opacity: 1;
-              //   position: absolute;
-              //   bottom: 12%;
-              //   left: 0;
-              //   overflow: hidden;
-              //   width: 100%;
-              //   z-index: 2;
-              //   transition: all 0.4s ease-in-out;
-              // }
+                &:hover {
+                    a {
+                        color: $primary-color;
+                    }
+                }
+                .team-title {
+                    margin: 1.5625rem 0 0px;
+                    font-size: 1.5rem;
+                    color: $heading-color;
+                    font-weight: 700;
+                    display: block;
+                }
             }
-          }
+            .team-member:hover .overlay-team .team-details {
+                opacity: 1;
+                transition: all 0.4s ease-in-out;
+            }
         }
-        &:hover {
-          a {
-            color: $primary-color;
-          }
-        }
-        .team-title {
-          margin: 1.5625rem 0 0px;
-          font-size: 1.5rem;
-          color: $heading-color;
-          font-weight: 700;
-          display: block;
-        }
-      }
-      .team-member:hover .overlay-team .team-details {
-        opacity: 1;
-        transition: all 0.4s ease-in-out;
-      }
     }
-  }
 }
 
 @media screen and (max-width: 576px) {
-  .title-w3l,
-  .title-w3l.two {
-    font-size: 1.875rem !important;
-    line-height: 2.375rem !important;
-  }
-  p {
-    font-size: 1rem !important;
-    line-height: 26px;
-  }
+    .title-w3l,
+    .title-w3l.two {
+        font-size: 1.875rem !important;
+        line-height: 2.375rem !important;
+    }
+    p {
+        font-size: 1rem !important;
+        line-height: 26px;
+    }
 }
 
 @media screen and (max-width: 768px) {
-  .feature-with-photo {
-    .feature-with-photo-hny {
-      .feature-with-photo-content {
-        .ab-right {
-          margin-top: 3.125rem;
+    .feature-with-photo {
+        .feature-with-photo-hny {
+            .feature-with-photo-content {
+                .ab-right {
+                    margin-top: 3.125rem;
+                }
+                .grid-columns-3 {
+                    grid-template-columns: 1fr !important;
+                }
+            }
         }
-        .grid-columns-3 {
-          grid-template-columns: 1fr !important;
-        }
-      }
     }
-  }
-
 }
 
 @media screen and (max-width: 992px) {
-
-  .feature-with-photo {
-    .feature-with-photo-hny {
-      .feature-with-photo-content {
-        .ab-right {
-          margin-top: 3.125rem;
+    .feature-with-photo {
+        .feature-with-photo-hny {
+            .feature-with-photo-content {
+                .ab-right {
+                    margin-top: 3.125rem;
+                }
+                .grid-columns-3 {
+                    grid-template-columns: 1fr 1fr !important;
+                    grid-gap: 2.5rem;
+                }
+            }
         }
-        .grid-columns-3 {
-          grid-template-columns: 1fr 1fr !important;
-          grid-gap: 2.5rem;
-        }
-      }
     }
-  }
-
-  .title-w3l,
-  .title-w3l.two {
-    font-size: 2rem !important;
-    line-height: 2.5rem !important;
-  }
-  p {
-    font-size: 1rem !important;
-    line-height: 26px;
-  }
+    .title-w3l,
+    .title-w3l.two {
+        font-size: 2rem !important;
+        line-height: 2.5rem !important;
+    }
+    p {
+        font-size: 1rem !important;
+        line-height: 26px;
+    }
 }
