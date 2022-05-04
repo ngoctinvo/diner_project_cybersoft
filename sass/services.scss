@@ -1,206 +1,225 @@
 @import "./variable";
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .home-services {
-    position: relative;
-    .container {
-        .row {
-            .col-lg-4 {
-                @include px-1;
-                .box-wrap {
-                    padding: 2.5rem 2.5rem;
-                    transition: all 0.5s ease 0s;
-                    border-radius: 0.5rem;
-                    box-shadow: 0 1.5625rem 6.125rem 0 #00000008;
-                    background-color: var(--bg-color);
-                    position: relative;
-                    border: 1px solid;
-                    .box-wrap-grid {
-                        display: grid;
-                        grid-template-columns: auto 1fr;
-                        grid-gap: 1.875rem;
-                        .icon {
-                            @include icon(var(--bg-light));
-                            span.fa {
-                                @include fa-icon;
-                            }
-                            &:hover {
-                                background: $primary-color;
-                                span.fa {
-                                    color: var(--bg-color);
-                                }
-                            }
-                        }
-                        .info {
-                            h4 {
-                                a {
-                                    font-size: 1.5rem;
-                                    font-weight: 600;
-                                    margin-top: 0.3125rem;
-                                    margin-bottom: 0px;
-                                    display: block;
-                                    color: var(--heading-color);
-                                    &:hover {
-                                        color: $primary-color;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    p:nth-last-child() {
-                        margin-top: 1rem;
-                    }
+  position: relative;
+  .container {
+    .row {
+      .col-lg-4 {
+        @include px-1;
+
+        .box-wrap {
+          padding: 2.5rem 2.5rem;
+          transition: all 0.5s ease 0s;
+          border-radius: 0.5rem;
+          box-shadow: 0 1.5625rem 6.125rem 0 #00000008;
+          background-color: $bg-color;
+          position: relative;
+          border: 1px solid $border-color-light;
+
+          .box-wrap-grid {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-gap: 1.875rem;
+            .icon {
+              @include icon($bg-light);
+              span.fa {
+                @include fa-icon;
+              }
+              &:hover {
+                background: $primary-color;
+                span.fa {
+                  color: $bg-color;
                 }
+              }
             }
+            .info {
+              h4 {
+                a {
+                  font-size: 1.5rem;
+                  font-weight: 600;
+                  margin-top: 0.3125rem;
+                  margin-bottom: 0px;
+                  display: block;
+                  color: $heading-color;
+                  &:hover {
+                    color: $primary-color;
+                  }
+                }
+              }
+            }
+          }
+
+          p:nth-last-child() {
+            margin-top: 1rem;
+          }
         }
+      }
     }
+  }
 }
 
 .middle {
-    background: url(../img/middle-banner2.jpg) center no-repeat;
-    position: relative;
-    background-size: cover;
-    z-index: 1;
-    .container {
-        .welcome-left {
-            @include text-center;
-            max-width: 43.75rem;
-            margin: 0 auto;
-            h3 {
-                font-size: 2.8125rem;
-                line-height: 3.4375rem;
-                font-weight: 600;
-                color: var(--bg-color);
-                max-width: 50rem;
-            }
-            .middle-buttons {
-                margin-top: 3rem;
-                width: 100%;
-                .btn-read {
-                    display: flex;
-                    @include btn;
-                    @include btn-style;
-                    @include btn-white;
-                    margin-right: 1rem !important;
-                    &:hover {
-                        background: var(--bg-color);
-                        color: $primary-color;
-                    }
-                }
-                .btn-contact {
-                    @include btn;
-                    @include btn-style;
-                    color: var(--bg-color);
-                    background-color: $primary-color;
-                    i {
-                        width: 12px;
-                        height: 12px;
-                    }
-                    &:hover {
-                        color: rgba(255, 255, 255, 0.8);
-                        background: hsla(24, 100%, 50%, 0.8);
-                    }
-                }
-                span {
-                    margin-left: 1rem;
-                }
-            }
+  background: url(../img/middle-banner2.jpg) center no-repeat;
+  position: relative;
+  background-size: cover;
+  z-index: 1;
+
+  .container {
+    .welcome-left {
+      @include text-center;
+      max-width: 43.75rem;
+      margin: 0 auto;
+      h3 {
+        font-size: 2.8125rem;
+        line-height: 3.4375rem;
+        font-weight: 600;
+        color: $bg-color;
+        max-width: 50rem;
+      }
+
+      .middle-buttons {
+        margin-top: 3rem;
+        width: 100%;
+        .btn-read {
+          display: flex;
+          @include btn;
+          @include btn-style;
+          @include btn-white;
+          margin-right: 1rem !important;
+          &:hover {
+            background: $bg-color;
+            color: $primary-color;
+          }
         }
+
+        .btn-contact {
+          @include btn;
+          @include btn-style;
+          color: $bg-color;
+          background-color: $primary-color;
+          i {
+            width: 12px;
+            height: 12px;
+          }
+          &:hover {
+            color: rgba(255, 255, 255, 0.8);
+            background: hsla(24, 100%, 50%, 0.8);
+          }
+        }
+        span {
+          margin-left: 1rem;
+        }
+      }
     }
-    .middle-layout {
-        background: #100f13a8;
-        position: absolute;
-        top: 0;
-        min-height: 100%;
-        left: 0;
-        right: 0;
-        z-index: -1;
-    }
+  }
+  .middle-layout {
+    background: #100f13a8;
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
 }
 
 .home-services {
-    position: relative;
-    .col-lg-6 {
-        padding-left: 1.25rem;
-    }
-    .menu-item {
-        .col-8 {
-            padding-left: 0 !important;
-        }
-        .col-4 {
-            padding-right: 0 !important;
-        }
-        .border-dot {
-            width: 100%;
-            padding-bottom: 0.625rem;
-            border-bottom: 0.125rem dotted #bbb;
-        }
-        .no-gutters {
-            margin-right: 0;
-            margin-left: 0;
-        }
-        .menu-item-name {
-            h6 {
-                font-size: 1.25rem;
-                font-weight: 600;
-            }
-        }
-        .menu-item-price {
-            h6 {
-                font-weight: 600;
-                font-size: 1.3em;
-                color: $primary-color;
-            }
-        }
-        .menu-item-description {
-            p {
-                margin-top: 0.625rem;
-            }
-        }
-    }
-}
+  position: relative;
 
+  .col-lg-6 {
+    padding-left: 1.25rem;
+  }
+  .menu-item {
+    .col-8 {
+      padding-left: 0 !important;
+    }
+
+    .col-4 {
+      padding-right: 0 !important;
+    }
+
+    .border-dot {
+      width: 100%;
+      padding-bottom: 0.625rem;
+      border-bottom: 0.125rem dotted #bbb;
+    }
+
+    .no-gutters {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    .menu-item-name {
+      h6 {
+        font-size: 1.25rem;
+        font-weight: 600;
+      }
+    }
+
+    .menu-item-price {
+      h6 {
+        font-weight: 600;
+        font-size: 1.3em;
+        color: $primary-color;
+      }
+    }
+
+    .menu-item-description {
+      p {
+        margin-top: 0.625rem;
+      }
+    }
+  }
+}
 @media screen and (max-width: 576px) {
-    .middle {
-        .welcome-left h3 {
-            font-size: 2.1875rem !important;
-            line-height: 2.5rem !important;
-            .middle-buttons {
-                margin-top: 2rem !important;
-                width: 100%;
-            }
-        }
+  .middle {
+    .welcome-left h3 {
+      font-size: 2.1875rem !important;
+      line-height: 2.5rem !important;
+      .middle-buttons {
+        margin-top: 2rem !important;
+        width: 100%;
+      }
     }
-    .title-w3l,
-    .title-w3l.two {
-        font-size: 1.875rem !important;
-        line-height: 2.375rem;
-    }
-    p {
-        font-size: 1rem;
-        line-height: 1.625rem;
-    }
+  }
+
+  .title-w3l,
+  .title-w3l.two {
+    font-size: 1.875rem !important;
+    line-height: 2.375rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
 }
 
 @media screen and (max-width: 992px) {
-    .middle {
-        .welcome-left h3 {
-            font-size: 2.5rem !important;
-            line-height: 3.125rem !important;
-            .middle-buttons {
-                margin-top: 2rem !important;
-                width: 100%;
-            }
-        }
+
+  .middle {
+    .welcome-left h3 {
+      font-size: 2.5rem !important;
+      line-height: 3.125rem !important;
+      .middle-buttons {
+        margin-top: 2rem !important;
+        width: 100%;
+      }
     }
-    .title-w3l,
-    .title-w3l.two {
-        font-size: 2rem !important;
-        line-height: 2.5rem;
-    }
+  }
+
+  .title-w3l,
+  .title-w3l.two {
+    font-size: 2rem !important;
+    line-height: 2.5rem;
+  }
+
 }
