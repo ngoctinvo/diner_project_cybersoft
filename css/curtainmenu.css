@@ -6,6 +6,114 @@ section {
   display: block;
 }
 
+.sidebarMini.is-opened {
+  transform: translateX(60%);
+}
+
+.sidebarMini .sidebarMini .sidebarMini .sidebarMini__content .sidebarMini .sidebarMini__content .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch *,
+.sidebarMini {
+  position: fixed;
+  top: 25%;
+  right: 0;
+  z-index: 500;
+  width: 400px;
+  background-color: #2196f3;
+  transition: .5s;
+  border-left: 1px solid #2196f3;
+  color: #fff;
+}
+
+.sidebarMini .sidebarMini .sidebarMini .sidebarMini__content .sidebarMini .sidebarMini__content .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch * .sidebarMini__content,
+.sidebarMini .sidebarMini__content {
+  width: 170px;
+  padding: 20px;
+  text-align: center;
+  /* Hide default HTML checkbox */
+}
+
+.sidebarMini .sidebarMini .sidebarMini .sidebarMini__content .sidebarMini .sidebarMini__content .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch * .sidebarMini__content .d-flex,
+.sidebarMini .sidebarMini__content .d-flex {
+  display: flex !important;
+}
+
+.sidebarMini .sidebarMini .sidebarMini .sidebarMini__content .sidebarMini .sidebarMini__content .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch * .sidebarMini__content h2,
+.sidebarMini .sidebarMini__content h2 {
+  font-size: 1rem;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.sidebarMini .sidebarMini .sidebarMini .sidebarMini__content .sidebarMini .sidebarMini__content .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch * .sidebarMini__content .switch,
+.sidebarMini .sidebarMini__content .switch {
+  position: relative;
+  display: inline-block;
+  width: 3.7rem;
+  height: 1.8rem;
+  margin: 0 0.3rem;
+}
+
+.sidebarMini .sidebarMini .sidebarMini .sidebarMini__content .sidebarMini .sidebarMini__content .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch * .sidebarMini__content .switch input,
+.sidebarMini .sidebarMini__content .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.sidebarMini .sidebarMini .sidebarMini .sidebarMini__content .sidebarMini .sidebarMini__content .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch * .sidebarMini__content .switch .slider,
+.sidebarMini .sidebarMini__content .switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.sidebarMini .sidebarMini .sidebarMini .sidebarMini__content .sidebarMini .sidebarMini__content .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch * .sidebarMini__content .switch .slider:before,
+.sidebarMini .sidebarMini__content .switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 1.3rem;
+  width: 1.3rem;
+  left: 4px;
+  bottom: 4px;
+  background-color: #2196f3;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+.sidebarMini .sidebarMini .sidebarMini .sidebarMini__content .sidebarMini .sidebarMini__content .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch * .sidebarMini__content .switch input:checked + .slider,
+.sidebarMini .sidebarMini__content .switch input:checked + .slider {
+  background-color: #ffffff;
+}
+
+.sidebarMini .sidebarMini .sidebarMini .sidebarMini__content .sidebarMini .sidebarMini__content .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch * .sidebarMini__content .switch input:focus + .slider,
+.sidebarMini .sidebarMini__content .switch input:focus + .slider {
+  box-shadow: 0 0 1px #ffffff;
+}
+
+.sidebarMini .sidebarMini .sidebarMini .sidebarMini__content .sidebarMini .sidebarMini__content .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch * .sidebarMini__content .switch input:checked + .slider:before,
+.sidebarMini .sidebarMini__content .switch input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.sidebarMini .sidebarMini .sidebarMini .sidebarMini__content .sidebarMini .sidebarMini__content .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch * .sidebarMini__button,
+.sidebarMini .sidebarMini__button {
+  background: #2196f3;
+  padding: 5px 20px;
+  border: 1px solid #2196f3;
+  border-radius: 8px 0 0 8px;
+  letter-spacing: 0.015rem;
+  position: fixed;
+  transform: translateX(-100%);
+  transition: .5s;
+  color: #fff;
+}
+
 #backToTop:hover {
   cursor: pointer;
   background-color: #333;
