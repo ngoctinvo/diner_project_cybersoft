@@ -313,7 +313,7 @@ section {
 
 @media screen and (max-width: 576px) {
   .overlay .overlay-content {
-    margin-left: -2.7rem !important;
+    margin-left: -3rem !important;
   }
   .overlay .closebtn {
     right: 10rem !important;
