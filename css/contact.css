@@ -1,5 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;400;500;600;700&display=swap");
+:root {
+  --bg-color: #fff;
+  --bg-light: #8273fc0d;
+  --bg-grey: #f7f7f7;
+  --heading-color: #232121;
+  --font-color: #161c2db3;
+}
+
+[data-theme="dark"] {
+  --bg-color: rgb(0, 0, 0);
+  --bg-light: #000000;
+  --bg-grey: #373232;
+  --heading-color: #d9d9d9;
+  --font-color: #ffffff;
+}
+
 html {
   font-size: 16px;
 }
@@ -350,7 +366,7 @@ p {
   padding: 0;
   font-size: 1.125rem;
   line-height: 1.75rem;
-  color: #161c2db3;
+  color: var(--font-color);
   font-family: "Quicksand", sans-serif;
 }
 
@@ -379,7 +395,7 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
-  color: #232121;
+  color: var(--heading-color);
   font-family: "Quicksand", sans-serif;
 }
 

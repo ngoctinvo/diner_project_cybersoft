@@ -1,3 +1,19 @@
+:root {
+  --bg-color: #fff;
+  --bg-light: #8273fc0d;
+  --bg-grey: #f7f7f7;
+  --heading-color: #232121;
+  --font-color: #161c2db3;
+}
+
+[data-theme="dark"] {
+  --bg-color: rgb(0, 0, 0);
+  --bg-light: #000000;
+  --bg-grey: #373232;
+  --heading-color: #d9d9d9;
+  --font-color: #ffffff;
+}
+
 html {
   font-size: 16px;
 }
@@ -348,7 +364,7 @@ p {
   padding: 0;
   font-size: 1.125rem;
   line-height: 1.75rem;
-  color: #161c2db3;
+  color: var(--font-color);
   font-family: "Quicksand", sans-serif;
 }
 
@@ -377,7 +393,7 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
-  color: #232121;
+  color: var(--heading-color);
   font-family: "Quicksand", sans-serif;
 }
 
@@ -428,7 +444,7 @@ section {
   transition: 0.3s ease-in;
   border-radius: 0.375rem;
   border: 2px solid transparent;
-  color: #fff;
+  color: var(--bg-color);
   background-color: #ff6600;
   border: 2px solid #ff6600;
 }
@@ -474,7 +490,7 @@ section {
 }
 
 .skills {
-  background-color: #f7f7f7;
+  background-color: var(--bg-grey);
   padding-top: 3rem !important;
   padding-bottom: 3rem !important;
 }
@@ -502,7 +518,7 @@ section {
 
 .skills .col-lg-5 .skills-bars .progress-info .progress-tittle {
   font-size: 1.125rem;
-  color: #232121;
+  color: var(--heading-color);
   margin-bottom: 0.625rem;
   font-weight: 700;
 }
@@ -512,7 +528,7 @@ section {
   height: 0.5em;
   overflow: hidden;
   font-size: 0.75em;
-  background-color: #161c2db3;
+  background-color: var(--font-color);
   border-radius: 0.25em;
 }
 
@@ -576,7 +592,7 @@ section {
 }
 
 .team-main .team .col-lg-4 .team-member .team-img .overlay-team .team-details .socials a span {
-  color: #fff;
+  color: var(--bg-color);
   font-size: 1rem;
   display: block;
   width: 2.625rem;
@@ -590,7 +606,7 @@ section {
 
 .team-main .team .col-lg-4 .team-member .team-img .overlay-team .team-details .socials a span:hover {
   color: #ff6600;
-  background-color: #fff;
+  background-color: var(--bg-color);
 }
 
 .team-main .team .col-lg-4 .team-member:hover a {
@@ -600,7 +616,7 @@ section {
 .team-main .team .col-lg-4 .team-member .team-title {
   margin: 1.5625rem 0 0px;
   font-size: 1.5rem;
-  color: #232121;
+  color: var(--heading-color);
   font-weight: 700;
   display: block;
 }

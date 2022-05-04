@@ -1,148 +1,143 @@
 @import "./curtainmenu.scss";
 @import "./variable";
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
 
 #header {
-  background-size: cover;
-  background-image: linear-gradient(to right, #ec6206fa, #050300d4),
-    url(../img/middle-banner2.jpg);
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  height: 21.875rem;
-  .header {
-    background-color: rgba(0, 0, 0, 0.267);
-    width: 100% !important;
-    height: 100%;
-    .header-container {
-      display: grid;
-      grid-template-columns: 4fr 1fr;
-      grid-gap: 1.25rem;
-      padding: 2.5rem 0 1.25rem 0;
-      align-items: center;
-      a.logo-brand {
-        text-decoration: none;
-        margin: 0;
-        padding: 0;
-        font-size: 2.25rem;
-        font-weight: 700;
-        color: $bg-color;
-      }
-      .menu-right-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 1.25rem;
-        align-items: center;
-        .search-bar {
-          display: flex;
-          .search {
-            position: relative;
-            .search__input {
-              display: flex;
-              flex: 1;
-              padding: 0.625rem 3.125rem 0.625rem 1.25rem;
-              height: 2.8125rem;
-              font-size: 1rem;
-              color: $font-color;
-              border: none;
-              font-weight: 400;
-              border-radius: $border-radius;
-              position: relative;
-              right: 0;
-              background: $bg-color;
-              outline: 0;
-              border: 1px solid $bg-color;
-            }
-            .search__icon {
-              position: absolute;
-              right: 1.25rem;
-              font-size: 0.9375rem;
-              top: 0.9375rem;
-              cursor: pointer;
-            }
-          }
-        }
-        .menu-switch-mode {
-          @include text-center;
-          .navigation {
-            display: block;
-            .theme-switch-wrapper {
-              display: flex;
-              align-items: center;
-              .theme-switch {
-                display: inline-block;
-                position: relative;
+    background-size: cover;
+    background-image: linear-gradient(to right, #ec6206fa, #050300d4), url(../img/middle-banner2.jpg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 21.875rem;
+    .header {
+        background-color: rgba(0, 0, 0, 0.267);
+        width: 100% !important;
+        height: 100%;
+        .header-container {
+            display: grid;
+            grid-template-columns: 4fr 1fr;
+            grid-gap: 1.25rem;
+            padding: 2.5rem 0 1.25rem 0;
+            align-items: center;
+            a.logo-brand {
+                text-decoration: none;
                 margin: 0;
-                input {
-                  display: none;
-                }
-                .mode-container {
-                  width: 1.5rem;
-                  height: 1.5rem;
-                  padding: 0.0625rem 0;
-                  .moon-icon {
-                    display: block;
-                    color: #eee;
-                    font-size: 1.4rem;
-                  }
-                }
-              }
+                padding: 0;
+                font-size: 2.25rem;
+                font-weight: 700;
+                color: var(--bg-color);
             }
-          }
+            .menu-right-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 1.25rem;
+                align-items: center;
+                .search-bar {
+                    display: flex;
+                    .search {
+                        position: relative;
+                        .search__input {
+                            display: flex;
+                            flex: 1;
+                            padding: 0.625rem 3.125rem 0.625rem 1.25rem;
+                            height: 2.8125rem;
+                            font-size: 1rem;
+                            color: var(--font-color);
+                            border: none;
+                            font-weight: 400;
+                            border-radius: $border-radius;
+                            position: relative;
+                            right: 0;
+                            background: var(--bg-color);
+                            outline: 0;
+                            border: 1px solid var(--bg-color);
+                        }
+                        .search__icon {
+                            position: absolute;
+                            right: 1.25rem;
+                            font-size: 0.9375rem;
+                            top: 0.9375rem;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .menu-switch-mode {
+                    @include text-center;
+                    .navigation {
+                        display: block;
+                        .theme-switch-wrapper {
+                            display: flex;
+                            align-items: center;
+                            .theme-switch {
+                                display: inline-block;
+                                position: relative;
+                                margin: 0;
+                                input {
+                                    display: none;
+                                }
+                                .mode-container {
+                                    width: 1.5rem;
+                                    height: 1.5rem;
+                                    padding: 0.0625rem 0;
+                                    .moon-icon {
+                                        display: block;
+                                        color: #eee;
+                                        font-size: 1.4rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .nav-menu {
+                    @include text-center;
+                    button#trigger-overlay {
+                        outline: none;
+                        border: none;
+                        background: none;
+                        @include text-center;
+                        color: #fbfdfb;
+                        font-size: 1.95rem;
+                        padding: 0 0.5rem;
+                    }
+                }
+            }
         }
-        .nav-menu {
-          @include text-center;
-          button#trigger-overlay {
-            outline: none;
-            border: none;
-            background: none;
-            @include text-center;
-            color: #fbfdfb;
-            font-size: 1.95rem;
-            padding: 0 0.5rem;
-          }
+        .banner-info {
+            margin-top: 5rem;
+            color: white;
+            text-align: center;
+            font-size: 1.125rem;
+            font-weight: 600;
+            vertical-align: middle;
+            text-transform: capitalize;
+            span:first-child {
+                color: #ff6600;
+                cursor: pointer;
+            }
+            i.fa {
+                margin-right: 0.5rem;
+                margin-left: 0.5rem;
+            }
         }
-      }
     }
-    .banner-info {
-      margin-top: 5rem;
-      color: white;
-      text-align: center;
-      font-size: 1.125rem;
-      font-weight: 600;
-      vertical-align: middle;
-      text-transform: capitalize;
-      span:first-child {
-        color: #ff6600;
-        cursor: pointer;
-      }
-
-      i.fa {
-        margin-right: 0.5rem;
-        margin-left: 0.5rem;
-      }
+    @media screen and (max-width: 576px) {
+        min-height: 12.5rem;
+        .search-bar {
+            display: none !important;
+        }
+        .banner-info {
+            margin-top: 1rem !important;
+        }
     }
-  }
-
-  @media screen and (max-width: 576px) {
-    min-height: 12.5rem;
-    .search-bar {
-      display: none !important;
+    @media screen and (max-width: 1200px) {
+        .banner-info {
+            margin-top: 4rem !important;
+        }
     }
-
-    .banner-info {
-      margin-top: 1rem !important;
-    }
-  }
-
-  @media screen and (max-width: 1200px) {
-    .banner-info {
-      margin-top: 4rem !important;
-    }
-  }
 }
