@@ -7,25 +7,26 @@
 }
 
 .feature-with-photo {
+    background-color: var(--bg-color);
     .feature-with-photo-hny {
         .feature-with-photo-content {
             .ab-in-flow {
                 align-items: center;
                 .ab-left {
                     .radius-image {
-                        border-radius: $border-radius;
+                        border-radius: var(--border-radius);
                     }
                 }
                 a {
                     @include btn;
                     @include btn-style;
-                    color: $bg-color;
-                    background-color: $primary-color;
-                    border: 2px solid $primary-color;
+                    color: var(--bg-color);
+                    background-color: var(--primary-color);
+                    border: 2px solid var(--primary-color);
                     &:hover {
                         color: #fff;
-                        background-color: $primary-color;
-                        border: 2px solid $primary-color;
+                        background-color: var(--primary-color);
+                        border: 2px solid var(--primary-color);
                         opacity: 0.8;
                     }
                 }
@@ -41,12 +42,12 @@
                     }
                     h4 {
                         a {
-                            color: $primary-color;
+                            color: var(--primary-color);
                             font-size: 1.25rem;
                             line-height: 2rem;
                             font-weight: 600;
                             &:hover {
-                                color: $secondary-color;
+                                color: var(--secondary-color);
                             }
                         }
                     }
@@ -64,7 +65,7 @@
 }
 
 .skills {
-    background-color: $bg-grey;
+    background-color: var(--bg-grey);
     @include py-5;
     .col-lg-5 {
         .title-subhny {
@@ -79,7 +80,7 @@
                 text-align: left;
                 .progress-tittle {
                     font-size: 1.125rem;
-                    color: $heading-color;
+                    color: var(--heading-color);
                     margin-bottom: 0.625rem;
                     font-weight: 700;
                 }
@@ -88,14 +89,14 @@
                     height: 0.5em;
                     overflow: hidden;
                     font-size: 0.75em;
-                    background-color: $font-color;
+                    background-color: var(--font-color);
                     border-radius: 0.25em;
                     .progress-bar-striped {
                         background-image: none;
                         background-size: 1em 1em;
                     }
                     .progress-bar {
-                        background-color: $primary-color;
+                        background-color: var(--primary-color);
                         transition: width 0.6s ease;
                     }
                 }
@@ -108,13 +109,14 @@
             grid-template-columns: 1fr 1fr;
             grid-gap: 0 1.875rem;
             .radius-image {
-                border-radius: $border-radius;
+                border-radius: var(--border-radius);
             }
         }
     }
 }
 
 .team-main {
+    background-color: var(--bg-color);
     .team {
         @include py-5;
         position: relative;
@@ -129,7 +131,7 @@
                         transition: all 0.2s ease-in-out;
                         overflow: hidden;
                         width: 100%;
-                        border-radius: $border-radius;
+                        border-radius: var(--border-radius);
                     }
                     .overlay-team {
                         .team-details {
@@ -146,7 +148,7 @@
                                     display: inline-block;
                                     margin-right: 5px;
                                     span {
-                                        color: $bg-color;
+                                        color: var(--bg-color);
                                         font-size: 1rem;
                                         display: block;
                                         width: 2.625rem;
@@ -157,8 +159,8 @@
                                         transition: all 0.3s ease 0s;
                                         background: rgba(157, 157, 157, 0.5);
                                         &:hover {
-                                            color: $primary-color;
-                                            background-color: $bg-color;
+                                            color: var(--primary-color);
+                                            background-color: var(--bg-color);
                                         }
                                     }
                                 }
@@ -178,13 +180,13 @@
                 }
                 &:hover {
                     a {
-                        color: $primary-color;
+                        color: var(--primary-color);
                     }
                 }
                 .team-title {
                     margin: 1.5625rem 0 0px;
                     font-size: 1.5rem;
-                    color: $heading-color;
+                    color: var(--heading-color);
                     font-weight: 700;
                     display: block;
                 }

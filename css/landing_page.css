@@ -1,7 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;400;500;600;700&display=swap");
-html {
-  font-size: 16px;
+:root {
+  --my-color: #fff;
+  --primary-color: #ff6600;
+  --secondary-color: #ffc600;
+  --bg--color: #fff;
+  --bg-light: #e7e3ff0d;
+  --bg-grey: #f7f7f7;
+  --heading-color: #232121;
+  --font-color: #161c2db3;
+  --border-color: transparent;
+  --border-color-light: #eee;
+}
+
+[theme="dark"]:root {
+  --my-color: #000;
+  --primary-color: #ff6600;
+  --secondary-color: #ffc600;
+  --bg--color: rgb(0, 0, 0);
+  --bg-light: #181818;
+  --bg-grey: #262626;
+  --heading-color: #ffffff;
+  --font-color: #ffffff;
+  --border-color: transparent;
+  --border-color-light: rgb(0, 0, 0);
 }
 
 section {

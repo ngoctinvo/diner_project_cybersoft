@@ -1,22 +1,14 @@
+@import './theme';
 //color
-$bg-color: #fff;
-$bg-light: #8273fc0d;
-$bg-grey: #f7f7f7;
-$heading-color: #232121;
-$font-color: #161c2db3;
-$primary-color: #ff6600;
-$secondary-color: #ffc600;
-$bs-gutter-x: 1.5rem;
-$bs-gutter-y: 0;
-//Border
-$border-radius: 0.375rem;
-$border-radius-full: 2.1875rem;
-$border-color: transparent;
-$border-color-light: #eee;
-html {
-    font-size: 16px;
-}
-
+// var(--primary-color: #ff6600;
+// var(--secondary-color: #ffc600;
+// var(--bg-color: #fff;
+// var(--bg-light: #8273fc0d;
+// var(--bg-grey: #f7f7f7;
+// var(--heading-color: #232121;
+// var(--font-color: #161c2db3;
+// var(--border-color: transparent;
+// var(--border-color-light: #eee;
 section {
     display: block;
 }
@@ -189,7 +181,7 @@ section {
     text-align: center;
     line-height: 3rem;
     border-radius: 50%;
-    background-color: $primary-color;
+    background-color: var(--primary-color);
     i {
         color: white;
     }
@@ -207,7 +199,7 @@ section {
     font-weight: 400;
     line-height: 1.875rem;
     letter-spacing: 0.0625rem;
-    color: $primary-color;
+    color: var(--primary-color);
     display: block;
     font-family: "Pacifico", cursive;
 }
@@ -217,7 +209,7 @@ section {
     font-weight: 400;
     line-height: 1.875rem;
     letter-spacing: 0.0625rem;
-    color: $primary-color;
+    color: var(--primary-color);
     display: block;
     font-family: "Pacifico", cursive;
 }
@@ -295,7 +287,7 @@ section {
     height: 4.375rem;
     @include text-center;
     line-height: 4.375rem;
-    border-radius: $border-radius;
+    border-radius: var(--border-radius);
     transition: 0.4s ease-in-out;
     background: $bg;
     cursor: pointer;
@@ -303,7 +295,7 @@ section {
 }
 
 @mixin fa-icon {
-    color: $primary-color;
+    color: var(--primary-color);
     font-size: 1.5625rem;
     line-height: 4.375rem;
 }
@@ -320,7 +312,7 @@ section {
     line-height: 1.875rem;
     font-weight: 700;
     transition: 0.3s ease-in;
-    border-radius: $border-radius;
+    border-radius: var(--border-radius);
     border: 2px solid transparent;
 }
 
@@ -497,7 +489,7 @@ p {
     padding: 0;
     font-size: 1.125rem;
     line-height: 1.75rem;
-    color: $font-color;
+    color: var(--font-color);
     font-family: "Quicksand", sans-serif;
 }
 
@@ -527,7 +519,7 @@ h5,
 h6 {
     margin: 0;
     padding: 0;
-    color: $heading-color;
+    color: var(--heading-color);
     font-family: "Quicksand", sans-serif;
 }
 
