@@ -31,6 +31,15 @@ function switchTheme(e) {
 }
 toggleSwitch.addEventListener('change', switchTheme);
 
+var mode;
+
 function settingMode() {
-    document.getElementById('sideBar').addClass("is-opened");
-}
+    mode = !mode;
+    if (!mode) {
+        window.localStorage.setItem('setting-mode', true)
+        document.getElementById('sideBar').classList.add("is-opened");
+    } else {
+        window.localStorage.setItem('setting-mode', false)
+        document.getElementById('sideBar').classList.remove("is-opened");
+    }
+};

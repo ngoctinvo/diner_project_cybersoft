@@ -57,16 +57,17 @@ section {
 }
 
 .sidebarMini.is-opened {
-  transform: translateX(60%);
+  transform: translateX(0px);
 }
 
 .sidebarMini .sidebarMini .sidebarMini .sidebarMini__content .sidebarMini .sidebarMini__content .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch *,
 .sidebarMini {
   position: fixed;
-  top: 25%;
+  top: 65%;
   right: 0;
   z-index: 500;
   width: 200px;
+  transform: translateX(200px);
   background-color: var(--primary-color);
   transition: .5s;
   border-left: 1px solid var(--primary-color);
