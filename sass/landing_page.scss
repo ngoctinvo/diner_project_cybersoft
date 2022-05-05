@@ -14,8 +14,8 @@
 @import "./other_variable";
 #about-us {
     width: 100%;
-    padding: $padding-xl;
-    background-color: #f7f7f7;
+    padding: var(--padding-xl);
+    background-color: var(--white);
     .about-us-container {
         display: flex;
         width: 100%;
@@ -33,7 +33,7 @@
         }
     }
     @media screen and (max-width: 768px) {
-        padding: $padding-lg;
+        padding: var(--padding-lg);
         .about-us-container {
             flex-direction: column;
             .title {
@@ -51,13 +51,13 @@
     .restaurants-container {
         width: 100%;
         height: 600px;
-        background-color: $orange;
+        background-color: var(--orange);
         display: flex;
         flex-direction: row;
         align-items: center;
         .title {
             h2 {
-                color: white;
+                color: var(--white);
                 text-align: left;
             }
         }
@@ -73,7 +73,7 @@
             padding: 0 3rem;
             width: 50%;
             p {
-                color: white;
+                color: var(--white);
                 font-size: 1rem;
                 font-weight: 300;
                 text-align: justify;
@@ -83,7 +83,7 @@
                 display: flex;
                 flex-direction: row;
                 span {
-                    color: black;
+                    color: var(--black);
                     font-size: 1.1rem;
                     font-weight: 700;
                 }
@@ -94,13 +94,13 @@
                     .icon {
                         i {
                             padding: 1.5rem;
-                            background-color: white;
+                            background-color: var(--white);
                             font-size: 1.5rem;
-                            color: $orange;
+                            color: var(--orange);
                             border-radius: 0.4rem;
                         }
                         i:hover {
-                            color: $orange-light;
+                            color: var(--orange-light);
                             transition: all 0.3s;
                         }
                         span {
@@ -140,8 +140,8 @@
 
 #our-team {
     width: 100%;
-    padding: $padding-xl;
-    background-color: white;
+    padding: var(--padding-xl);
+    background-color: var(--white);
     .title {
         text-align: center;
     }
@@ -153,6 +153,7 @@
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
+            gap: 2rem;
             .item {
                 // width: calc(100%/3);            
                 width: 100%;
@@ -174,13 +175,13 @@
                             background-color: rgba(207, 207, 207, 0.693);
                             padding: 1rem;
                             border-radius: 50%;
-                            color: white;
+                            color: var(--white);
                             opacity: 0;
                             cursor: pointer;
                         }
                         i:hover {
-                            background-color: white;
-                            color: $orange;
+                            background-color: var(--white);
+                            color: var(--orange);
                             transition: all 0.4s;
                         }
                     }
@@ -189,7 +190,7 @@
                     text-align: center;
                     margin-top: 1.5rem;
                     a {
-                        color: black;
+                        color: var(--black);
                         font-weight: 700;
                         font-size: 1.5rem;
                     }
@@ -200,7 +201,7 @@
                 }
             }
             .item:hover a {
-                color: $orange;
+                color: var(--orange);
                 text-decoration: none;
                 transition: all 0.4s;
             }
@@ -225,8 +226,8 @@
 
 #whats-new {
     width: 100%;
-    padding: $padding-xl;
-    background-color: #f7f7f7;
+    padding: var(--padding-xl);
+    background-color: var(--gray-light);
     .title {
         text-align: center;
     }
@@ -257,7 +258,7 @@
                     position: absolute;
                     .text {
                         span {
-                            color: $orange-light;
+                            color: var(--orange-light);
                             font-size: 1.3rem;
                             font-weight: 600;
                         }
@@ -288,7 +289,7 @@
     }
     // @media screen and (max-width: 576px) {}
     @media screen and (max-width: 768px) {
-        padding: $padding-lg;
+        padding: var(--padding-lg);
     }
     // @media screen and (max-width: 992px) {}
     // @media screen and (max-width: 1200px) {}
@@ -296,8 +297,8 @@
 
 #services {
     width: 100%;
-    background-color: #f7f7f7;
-    padding: $padding-xl;
+    background-color: var(--gray-light);
+    padding: var(--padding-xl);
     .list {
         width: 100%;
         height: 100%;
@@ -309,7 +310,7 @@
             padding: 2rem;
             display: flex;
             flex-direction: column;
-            background-color: white;
+            background-color: var(--white);
             border: 2px solid rgba(128, 128, 128, 0.126);
             border-radius: 0.6rem;
             width: 100%;
@@ -321,10 +322,10 @@
                 font-size: 1rem;
                 .icon {
                     i {
-                        background-color: $gray-light;
+                        background-color: var(--gray-light);
                         padding: 1.5rem;
                         border-radius: 0.6rem;
-                        color: $orange;
+                        color: var(--orange);
                         margin-right: 2rem;
                         font-size: 1.5rem;
                     }
@@ -335,7 +336,7 @@
                 }
             }
             .type:hover h3 {
-                color: $orange;
+                color: var(--orange);
                 transition: all 0.3s;
                 cursor: pointer;
             }
@@ -346,25 +347,25 @@
             }
         }
         .item:hover .type i {
-            color: white;
-            background-color: $orange;
+            color: var(--white);
+            background-color: var(--orange);
             transition: all 0.5s;
         }
     }
     // @media screen and (max-width: 576px) {}
     // @media screen and (max-width: 768px) {}
     @media screen and (max-width: 1280px) {
-        padding: $padding-lg;
+        padding: var(--padding-lg);
     }
     @media screen and (max-width: 992px) {
-        padding: $padding-lg;
+        padding: var(--padding-lg);
         .list {
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(3, 250px);
         }
     }
     @media screen and (max-width: 768px) {
-        padding: $padding-lg;
+        padding: var(--padding-lg);
         .list {
             display: flex;
             flex-direction: column;
@@ -422,16 +423,16 @@
                 button:first-child:hover {
                     background-color: white;
                     transition: all 0.6s;
-                    color: $orange;
+                    color: var(--orange);
                 }
                 button:nth-child(2) {
                     margin-left: 1rem;
                     border-radius: 0.6rem;
-                    background-color: $orange;
+                    background-color: var(--orange);
                     font-weight: 600;
                     color: rgba(255, 255, 255, 0.789);
                     padding: 0.8rem 2rem;
-                    border: 2px solid $orange;
+                    border: 2px solid var(--orange);
                 }
                 button:nth-child(2):hover {
                     background-color: #ff6600d4;
@@ -441,17 +442,18 @@
         }
     }
     .statistics-number-container {
+        background-color: var(--gray-light);
         position: absolute;
         top: 70%;
         width: 100%;
         .statistics-number {
             width: 100%;
-            padding: $padding-xl;
+            padding: var(--padding-xl);
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             .item {
-                background-color: #ffffff;
+                background-color: var(--white);
                 padding: 2rem;
                 width: 18vw;
                 height: 17vw;
@@ -465,16 +467,17 @@
                     width: 4rem;
                     height: 4rem;
                     line-height: 4rem;
-                    background-color: $orange;
+                    background-color: var(--orange);
                     text-align: center;
                     font-size: 2rem;
                     border-radius: 50%;
-                    color: white;
+                    color: var(--white);
                 }
                 .count {
                     font-size: 2.6rem;
                     margin-top: 0.5rem;
                     font-weight: 600;
+                    color: var(--black);
                 }
                 p {
                     font-size: 1.1rem;
@@ -492,7 +495,7 @@
         height: 450px !important;
         .statistics-number-container {
             .statistics-number {
-                padding: $padding-lg;
+                padding: var(--padding-lg);
                 .item {
                     i {
                         font-size: 1.8rem;
@@ -511,7 +514,7 @@
         height: 400px !important;
         .statistics-number-container {
             .statistics-number {
-                padding: $padding-lg !important;
+                padding: var(--padding-lg) !important;
                 .item {
                     padding: 1.5rem;
                     i {
@@ -531,7 +534,7 @@
     @media screen and (max-width: 768px) {
         .statistics-number {
             width: 100%;
-            padding: $padding-sm !important;
+            padding: var(--padding-sm) !important;
             display: grid !important;
             grid-template-columns: 180px 180px;
             grid-template-rows: 200px 200px;
@@ -549,7 +552,7 @@
             display: flex;
             flex-direction: column;
             button:first-child {
-                background-color: $orange !important;
+                background-color: var(--orange) !important;
                 margin-bottom: 1rem !important;
             }
             button:first-child:hover {
@@ -579,8 +582,9 @@
 // }
 .video {
     margin-top: -4rem;
+    background-color: var(--white);
     .new-block {
-        background: $bg-color;
+        background: var(--bg-color);
         .container {
             .history-info {
                 position: relative;
@@ -591,7 +595,7 @@
                 display: grid;
                 align-items: center;
                 min-height: 31.25rem;
-                border-radius: $border-radius;
+                border-radius: var(--border-radius);
                 .play-view {
                     left: 0;
                     right: 0;
@@ -608,15 +612,15 @@
                         transition: 0.3s ease-in-out;
                         -webkit-animation: ripple 1s linear infinite;
                         animation: ripple 1s linear infinite;
-                        color: $primary-color;
+                        color: var(--primary-color);
                         border: transparent;
-                        background: $bg-color;
+                        background: var(--bg-color);
                         &:hover {
                             transform: scale(1.2);
                             transition: 0.3s ease-in-out;
-                            background: $primary-color;
+                            background: var(--primary-color);
                             border: transparent;
-                            color: $bg-color;
+                            color: var(--bg-color);
                         }
                         &::after {
                             display: inline-block;
@@ -627,7 +631,7 @@
                             top: 0;
                             left: 0;
                             border-radius: 50%;
-                            background: $bg-color;
+                            background: var(--bg-color);
                             animation: anime 2s ease-out 1s infinite;
                         }
                         &::before {
@@ -639,7 +643,7 @@
                             top: 0;
                             left: 0;
                             border-radius: 50%;
-                            background: $bg-color;
+                            background: var(--bg-color);
                             animation: anime 2s ease-out infinite;
                         }
                     }
@@ -653,7 +657,7 @@
                     left: 0;
                     right: 0;
                     z-index: -1;
-                    border-radius: $border-radius;
+                    border-radius: var(--border-radius);
                 }
             }
         }
@@ -677,8 +681,8 @@
 
 #blog {
     width: 100%;
-    background-color: $gray-light;
-    padding: $padding-xl;
+    background-color: var(--gray-light);
+    padding: var(--padding-xl);
     height: 750px;
     .title {
         text-align: center;
@@ -712,15 +716,15 @@
                         cursor: pointer;
                         font-size: 1rem;
                         font-weight: 600;
-                        color: white;
+                        color: var(--white);
                         padding: 0.2rem 1rem;
                         border-radius: 1rem;
                         border: none;
                         margin: 1rem;
-                        background-color: $orange;
+                        background-color: var(--orange);
                     }
                     span {
-                        color: white;
+                        color: var(--white);
                     }
                 }
             }
@@ -760,7 +764,7 @@
                 }
                 a {
                     text-decoration: none;
-                    color: black;
+                    color: var(--black);
                     font-size: 1rem;
                     font-weight: 600;
                 }
@@ -781,17 +785,18 @@
     }
     @media screen and (max-width: 768px) {
         height: 1800px;
-        padding: $padding-lg;
+        padding: var(--padding-lg);
     }
     @media screen and (max-width: 476px) {
         height: 1600px;
-        padding: $padding-sm;
+        padding: var(--padding-sm);
     }
 }
 
 #testimonials {
+    background-color: var(--white);
     width: 100%;
-    padding: $padding-xl;
+    padding: var(--padding-xl);
     .title {
         text-align: center;
         margin-bottom: 2rem;
@@ -809,7 +814,7 @@
                 margin-bottom: 1rem;
             }
             i {
-                color: $orange;
+                color: var(--orange);
                 font-size: 1.2rem;
             }
             h3 {
@@ -825,6 +830,7 @@
             span {
                 font-size: 1.5rem;
                 font-weight: 400;
+                color: var(--black);
             }
         }
     }
@@ -836,8 +842,9 @@
 
 #contact-us {
     width: 100%;
+    background-color: var(--white);
     .contact-us-container {
-        padding: $padding-xl;
+        padding: var(--padding-xl);
         text-align: center;
         .content {
             font-size: 1.3rem;
@@ -856,11 +863,11 @@
             }
             input {
                 border-radius: 0.6rem;
-                background-color: $gray-light;
+                background-color: var(--gray-light);
                 border: none;
                 padding-left: 1.5rem;
                 font-size: 1.1rem;
-                color: $gray-light;
+                color: var(--gray-light);
                 font-weight: 400;
             }
             .message-input {
@@ -880,12 +887,12 @@
     @media screen and (max-width: 1200px) {}
     @media screen and (max-width: 992px) {
         .contact-us-container {
-            padding: $padding-lg;
+            padding: var(--padding-lg);
         }
     }
     @media screen and (max-width: 768px) {
         .contact-us-container {
-            padding: $padding-md;
+            padding: var(--padding-md);
             .content {
                 .info-input {
                     grid-template-columns: repeat( 1, 1fr);
@@ -895,7 +902,7 @@
     }
     @media screen and (max-width: 576px) {
         .contact-us-container {
-            padding: $padding-sm;
+            padding: var(--padding-sm);
             .content {
                 .info-input {
                     grid-template-columns: repeat( 1, 1fr);
@@ -912,8 +919,9 @@
 
 #find-us {
     width: 100%;
+    background-color: var(--gray-light);
     .find-us-container {
-        padding: $padding-xl;
+        padding: var(--padding-xl);
         display: flex;
         justify-content: space-between;
         .title {
@@ -930,7 +938,7 @@
                     align-items: center;
                     margin: 1.5rem 0;
                     i {
-                        color: $orange;
+                        color: var(--orange);
                         font-size: 1.5rem;
                     }
                     .detail {
@@ -938,6 +946,7 @@
                         span {
                             font-size: 1.2rem;
                             font-weight: 400;
+                            color: var(--black);
                         }
                         p {
                             font-size: 1.1rem;
@@ -953,21 +962,21 @@
         }
         .map {
             width: 70%;
-            border: 0.7rem solid $gray-light;
+            border: 0.7rem solid var(--gray-light);
             iframe {
                 width: 100%;
-                height: 25vw;
+                height: 400px;
             }
         }
     }
     @media screen and (max-width: 576px) {
         .find-us-container {
-            padding: $padding-sm;
+            padding: var(--padding-sm);
         }
     }
     @media screen and (max-width: 768px) {
         .find-us-container {
-            padding: $padding-md;
+            padding: var(--padding-md);
             display: block;
             .content {
                 width: 100%;
@@ -975,7 +984,7 @@
             .map {
                 width: 100%;
                 height: 65vw;
-                border: 0.1rem solid $gray-light;
+                border: 0.1rem solid var(--gray-light);
                 iframe {
                     width: 100%;
                     height: 100%;
@@ -985,7 +994,7 @@
     }
     @media screen and (max-width: 992px) {
         .find-us-container {
-            padding: $padding-sm;
+            padding: var(--padding-sm);
             display: block;
             .content {
                 width: 100%;

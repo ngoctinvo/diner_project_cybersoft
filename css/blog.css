@@ -15,6 +15,16 @@
   --bs-gutter-y: 0;
   --border-radius: 0.375rem;
   --border-radius-full: 2.1875rem;
+  --orange: #ff6600;
+  --orange-light: #ffcc00;
+  --gray-light: #f7f7f7;
+  --gray: #858585;
+  --white: #fff;
+  --black: #000;
+  --padding-xl: 5rem 10rem;
+  --padding-lg: 5rem 5rem;
+  --padding-md: 4rem 2rem;
+  --padding-sm: 4rem 1rem;
 }
 
 [theme="dark"]:root {
@@ -22,7 +32,7 @@
   --primary-color: #ff6600;
   --secondary-color: #ffc600;
   --bg-color: rgb(0, 0, 0);
-  --bg-light: #181818;
+  --bg-light: #2e2e2e;
   --bg-grey: #262626;
   --heading-color: #ffffff;
   --font-color: #ffffff;
@@ -32,6 +42,16 @@
   --bs-gutter-y: 0;
   --border-radius: 0.375rem;
   --border-radius-full: 2.1875rem;
+  --orange: #ff6600;
+  --orange-light: #ffcc00;
+  --gray-light: #2e2e2e;
+  --gray: #e9e9e9;
+  --white: rgb(0, 0, 0);
+  --black: rgb(255, 255, 255);
+  --padding-xl: 5rem 10rem;
+  --padding-lg: 5rem 5rem;
+  --padding-md: 4rem 2rem;
+  --padding-sm: 4rem 1rem;
 }
 
 section {
@@ -48,10 +68,10 @@ section {
   top: 25%;
   right: 0;
   z-index: 500;
-  width: 400px;
-  background-color: #2196f3;
+  width: 200px;
+  background-color: var(--primary-color);
   transition: .5s;
-  border-left: 1px solid #2196f3;
+  border-left: 1px solid var(--primary-color);
   color: #fff;
 }
 
@@ -60,7 +80,6 @@ section {
   width: 170px;
   padding: 20px;
   text-align: center;
-  /* Hide default HTML checkbox */
 }
 
 .sidebarMini .sidebarMini .sidebarMini .sidebarMini__content .sidebarMini .sidebarMini__content .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch * .sidebarMini__content .d-flex,
@@ -113,7 +132,7 @@ section {
   width: 1.3rem;
   left: 4px;
   bottom: 4px;
-  background-color: #2196f3;
+  background-color: var(--primary-color);
   transition: .4s;
   border-radius: 50%;
 }
@@ -135,9 +154,9 @@ section {
 
 .sidebarMini .sidebarMini .sidebarMini .sidebarMini__content .sidebarMini .sidebarMini__content .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch .sidebarMini .sidebarMini__content .switch * .sidebarMini__button,
 .sidebarMini .sidebarMini__button {
-  background: #2196f3;
+  background: var(--primary-color);
   padding: 5px 20px;
-  border: 1px solid #2196f3;
+  border: 1px solid var(--primary-color);
   border-radius: 8px 0 0 8px;
   letter-spacing: 0.015rem;
   position: fixed;
@@ -443,7 +462,7 @@ section {
 }
 
 .title h2 {
-  color: #ff6600;
+  color: var(--orange);
   font-size: 1.4rem;
   font-weight: 500;
   font-family: 'Pacifico', cursive;
@@ -453,12 +472,13 @@ section {
   font-size: 2.3rem;
   font-weight: 600;
   font-family: 'Quicksand', sans-serif;
+  color: var(--black);
 }
 
 .my-btn {
   padding: 0.8rem 2.5rem;
-  background-color: #ff6600;
-  color: white;
+  background-color: var(--orange);
+  color: var(--white);
   border-radius: 0.6rem;
   border: none;
   font-size: 1.1rem;
@@ -466,18 +486,19 @@ section {
 }
 
 .my-btn:hover {
-  background-color: #ffcc00;
+  background-color: var(--orange-light);
   transition: all 0.4s;
 }
 
 #blog {
-  color: black;
+  background-color: var(white);
+  color: var(--black);
 }
 
 #blog .blog-container {
   width: 100%;
-  background-color: #f7f7f7;
-  padding: 5rem 10rem;
+  background-color: var(--gray-light);
+  padding: var(--padding-xl);
 }
 
 #blog .blog-container .row {
@@ -526,16 +547,16 @@ section {
   cursor: pointer;
   font-size: 1rem;
   font-weight: 600;
-  color: white;
+  color: var(--white);
   padding: 0.2rem 1rem;
   border-radius: 1rem;
   border: none;
   margin: 1rem;
-  background-color: #ff6600;
+  background-color: var(--orange);
 }
 
 #blog .blog-container .row .left-posts .list .item .img .info-img span {
-  color: white;
+  color: var(--white);
 }
 
 #blog .blog-container .row .left-posts .list .item .content h3 {
@@ -580,7 +601,7 @@ section {
 
 #blog .blog-container .row .left-posts .list .item .author a {
   text-decoration: none;
-  color: black;
+  color: var(--black);
   font-size: 1rem;
   font-weight: 600;
 }
@@ -605,26 +626,26 @@ section {
 }
 
 #blog .blog-container .row .left-posts .control-btn ul li .item {
-  background-color: #f7f7f7;
+  background-color: var(--gray-light);
   padding: 0.6rem 1rem;
-  color: #000000;
+  color: var(--black);
   border-radius: 0.5rem;
-  border: 1px solid #f7f7f7;
+  border: 1px solid var(--gray-light);
 }
 
 #blog .blog-container .row .left-posts .control-btn ul li .active {
   cursor: default;
-  background-color: #ff6600;
+  background-color: var(--orange);
   padding: 0.6rem 1rem;
-  color: white;
+  color: var(--white);
   border-radius: 0.5rem;
 }
 
 #blog .blog-container .row .left-posts .control-btn ul li:hover .item {
   transition: all 0.3s;
-  color: #ff6600;
-  background-color: white;
-  border: 1px solid #ff6600;
+  color: var(--orange);
+  background-color: var(--white);
+  border: 1px solid var(--orange);
 }
 
 #blog .blog-container .row .right-posts {
@@ -636,7 +657,7 @@ section {
 }
 
 #blog .blog-container .row .right-posts .post {
-  background-color: white;
+  background-color: var(--white);
   margin-bottom: 2rem;
   padding: 2.5rem 2rem;
   border-radius: 0.6rem;
@@ -719,7 +740,7 @@ section {
 }
 
 #blog .blog-container .row .right-posts .categories li {
-  color: #858585;
+  color: var(--gray);
   list-style-type: square;
 }
 
@@ -727,16 +748,16 @@ section {
   font-size: 1.3rem;
   line-height: 200%;
   text-decoration: none;
-  color: #858585;
+  color: var(--gray);
 }
 
 #blog .blog-container .row .right-posts .categories li:hover a {
-  color: #ff6600;
+  color: var(--orange);
   transition: all 0.3s;
 }
 
 #blog .blog-container .row .right-posts .categories li:hover {
-  color: black;
+  color: var(--black);
   transition: all 0.3s;
 }
 
@@ -753,7 +774,7 @@ section {
 
 @media screen and (max-width: 1280px) {
   #blog .blog-container {
-    padding: 5rem 10rem;
+    padding: var(--padding-xl);
   }
   #blog .blog-container .row .left-posts .list {
     grid-template-rows: repeat(3, 600px) !important;
@@ -793,7 +814,7 @@ section {
 
 @media screen and (max-width: 992px) {
   #blog .blog-container {
-    padding: 5rem 10rem;
+    padding: var(--padding-xl);
   }
   #blog .blog-container .row {
     flex-direction: column;
@@ -818,7 +839,7 @@ section {
 
 @media screen and (max-width: 768px) {
   #blog .blog-container {
-    padding: 5rem 5rem;
+    padding: var(--padding-lg);
   }
   #blog .blog-container .row .left-posts .list {
     grid-template-rows: repeat(3, 450px) !important;
@@ -836,7 +857,7 @@ section {
 
 @media screen and (max-width: 576px) {
   #blog .blog-container {
-    padding: 5rem 5rem;
+    padding: var(--padding-lg);
   }
   #blog .blog-container .row .left-posts .list {
     grid-template-rows: repeat(3, 400px) !important;

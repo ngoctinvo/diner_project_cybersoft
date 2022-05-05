@@ -30,3 +30,7 @@ function switchTheme(e) {
     }
 }
 toggleSwitch.addEventListener('change', switchTheme);
+
+function settingMode() {
+    document.getElementById('sideBar').addClass("is-opened");
+}

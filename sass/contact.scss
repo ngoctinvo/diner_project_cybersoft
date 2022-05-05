@@ -8,7 +8,7 @@
 
 .title {
     h2 {
-        color: #ff6600;
+        color: var(--orange);
         font-size: 1.5rem;
         font-style: italic;
         font-weight: 600;
@@ -16,14 +16,15 @@
     span {
         font-size: 2.5rem;
         font-weight: 400;
-        color: black;
+        color: var(--black);
     }
 }
 
 @import "./other_variable";
 #contact-us {
+    background-color: var(--white);
     .contact-us-container {
-        padding: $padding-xl;
+        padding: var(--padding-xl);
         text-align: center;
         .content {
             font-size: 1.3rem;
@@ -43,7 +44,7 @@
             }
             input {
                 border-radius: 0.6rem;
-                background-color: $gray-light;
+                background-color: var(--gray-light);
                 border: none;
                 padding-left: 1rem;
                 font-size: 1rem;
@@ -65,12 +66,12 @@
     @media screen and (max-width: 1200px) {}
     @media screen and (max-width: 992px) {
         .contact-us-container {
-            padding: $padding-lg;
+            padding: var(--padding-lg);
         }
     }
     @media screen and (max-width: 768px) {
         .contact-us-container {
-            padding: $padding-md;
+            padding: var(--padding-md);
             .content {
                 .info-input {
                     grid-template-columns: repeat( 1, 1fr);
@@ -80,7 +81,7 @@
     }
     @media screen and (max-width: 576px) {
         .contact-us-container {
-            padding: $padding-sm;
+            padding: var(--padding-sm);
             .content {
                 .info-input {
                     grid-template-columns: repeat( 1, 1fr);
@@ -96,8 +97,9 @@
 }
 
 #find-us {
+    background-color: var(--gray-light);
     .find-us-container {
-        padding: $padding-xl;
+        padding: var(--padding-xl);
         display: flex;
         justify-content: space-between;
         .title {
@@ -114,7 +116,7 @@
                     align-items: center;
                     margin: 1.5rem 0;
                     i {
-                        color: $orange;
+                        color: var(--orange);
                         font-size: 1.5rem;
                     }
                     .detail {
@@ -138,7 +140,7 @@
         .map {
             width: 70%;
             height: 100%;
-            border: 0.7rem solid $gray-light;
+            border: 0.7rem solid var(--gray-light);
             iframe {
                 width: 100%;
                 height: 25vw;
@@ -147,12 +149,12 @@
     }
     @media screen and (max-width: 576px) {
         .find-us-container {
-            padding: $padding-sm;
+            padding: var(--padding-sm);
         }
     }
     @media screen and (max-width: 768px) {
         .find-us-container {
-            padding: $padding-md;
+            padding: var(--padding-md);
             display: block;
             .content {
                 width: 100%;
@@ -160,7 +162,7 @@
             .map {
                 width: 100%;
                 height: 65vw;
-                border: 0.1rem solid $gray-light;
+                border: 0.1rem solid var(--gray-light);
                 iframe {
                     width: 100%;
                     height: 100%;
@@ -170,7 +172,7 @@
     }
     @media screen and (max-width: 992px) {
         .find-us-container {
-            padding: $padding-sm;
+            padding: var(--padding-sm);
             display: block;
             .content {
                 width: 100%;
