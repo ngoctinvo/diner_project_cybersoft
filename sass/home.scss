@@ -350,7 +350,7 @@ div {
                             &:hover {
                                 background: var(--primary-color);
                                 span.fa {
-                                    color: var(--font-color);
+                                    color: #fff;
                                 }
                             }
                         }
@@ -464,7 +464,7 @@ div {
                     width: 4.25rem;
                     height: 4.25rem;
                     line-height: 4.25rem;
-                    color: var(--font-color);
+                    color: #fff;
                     text-align: center;
                 }
                 .timer {
@@ -622,7 +622,7 @@ div {
                     left: 0.625rem;
                     a.receipe {
                         background: var(--primary-color);
-                        color: var(--font-color);
+                        color: #fff;
                         padding: 0.1875rem 1.25rem;
                         border-radius: 2.1875rem;
                         font-weight: 700;
@@ -633,7 +633,7 @@ div {
                     }
                     .meta-info {
                         opacity: 1;
-                        color: var(--font-color);
+                        color: #fff;
                         margin-left: 0.625rem;
                         font-size: 0.9375rem;
                         letter-spacing: 0.02rem;
