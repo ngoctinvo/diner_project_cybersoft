@@ -28,16 +28,16 @@
 }
 
 [theme="dark"]:root {
-    --my-color: #000;
+    --my-color: #232220;
     --primary-color: #ff6600;
     --secondary-color: #ffc600;
-    --bg-color: rgb(0, 0, 0);
+    --bg-color: #232220;
     --bg-light: #2e2e2e;
     --bg-grey: #262626;
     --heading-color: #ffffff;
     --font-color: #ffffff;
     --border-color: transparent;
-    --border-color-light: rgb(0, 0, 0);
+    --border-color-light: rgb(255 255 255 / 10%);
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     //Border
@@ -48,7 +48,7 @@
     --orange-light: #ffcc00;
     --gray-light: #2e2e2e;
     --gray: #e9e9e9;
-    --white: rgb(0, 0, 0);
+    --white: #232220;
     --black: rgb(255, 255, 255);
     --padding-xl: 5rem 10rem;
     --padding-lg: 5rem 5rem;

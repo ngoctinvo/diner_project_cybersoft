@@ -37,7 +37,7 @@
                             &:hover {
                                 background: var(--primary-color);
                                 span.fa {
-                                    color: var(--bg-color);
+                                    color: #fff;
                                 }
                             }
                         }
@@ -93,14 +93,14 @@
                     @include btn-white;
                     margin-right: 1rem !important;
                     &:hover {
-                        background: var(--bg-color);
+                        background: #fff;
                         color: var(--primary-color);
                     }
                 }
                 .btn-contact {
                     @include btn;
                     @include btn-style;
-                    color: var(--bg-color);
+                    color: #fff;
                     background-color: var(--primary-color);
                     i {
                         width: 12px;

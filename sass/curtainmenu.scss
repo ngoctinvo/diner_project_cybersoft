@@ -21,16 +21,16 @@
     top: 2.5rem;
     overflow: hidden;
     border: none;
-    background: $primary-color;
-    color: $bg-color;
-    border-radius: $border-radius;
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 0.5rem;
   }
 
   a {
     padding: 0.5rem;
     text-decoration: none;
     font-size: 1.5625rem;
-    color: $bg-color;
+    color: #fff;
     display: block;
     transition: 0.3s;
   }
@@ -46,7 +46,7 @@
 
 .overlay a:hover,
 .overlay a:focus {
-  color: $primary-color;
+  color:var(--primary-color);
 }
 
 @media screen and (max-height: 450px) {
